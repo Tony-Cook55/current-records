@@ -1,0 +1,131 @@
+
+/* This is the container that holds everything inside the modal */
+.formsContainer{
+
+}
+
+@media screen and (min-width: 600px) {
+  .formsContainer{
+
+  }
+}
+
+
+
+/* $$$$$ ALL FORM ITEMS INSIDE OF AddRecords.jsx  $$$$$ */
+
+
+/* This is the labels that are above all of the forms */
+.labelsForTXTs{
+  font-size: 3.5vw;
+  padding-top: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  .labelsForTXTs{
+    font-size: 2vw;
+  }
+}
+
+
+
+
+/* THIS WILL TARGET THE BUTTON ON THE "Choose File" Button */
+input[type="file"]::file-selector-button {
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 40px;
+
+  background-color: #61dafb;
+  border: 1px solid black;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  margin-right: 16px;
+
+
+    /* Adds the little grow animation on a hover */
+    transition-property: all; 
+    transition-duration: 0.3s; 
+    transition-timing-function: ease; 
+    /* IN :HOVER ADD      transform: scale(1.2); */
+}
+
+input[type="file"]::file-selector-button:hover {
+  transform: scale(1.1);
+
+  cursor: cell; /* Makes the cursor the little Cross on hover */
+}
+
+/* This will make the text "No file chosen" to the right of the Choose File Button disappear */
+input[type='file'] {
+  color: transparent;
+}
+
+
+
+
+
+
+#txtrecordsName{
+  border: 2px solid black ;
+}
+
+#txtartistsFirstName{
+  border: 2px solid black ;
+}
+
+#txtartistsLastName{
+  border: 2px solid black ;
+}
+
+#txtmusicGenre{
+  border: 2px solid black ;
+}
+
+/* $$$$$ ALL FORM ITEMS INSIDE OF AddRecords.jsx  $$$$$ */
+
+
+
+
+
+/* This is the button at the bottom that will add a new record once all forms are filled out */
+#addNewRecordBTN{
+  cursor: cell; /* Makes the cursor the little Cross on hover */
+
+
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+  /* Adds the little grow animation on a hover */
+  transition-property: all; 
+  transition-duration: 0.3s; 
+  transition-timing-function: ease; 
+  /* IN :HOVER ADD      transform: scale(1.2); */
+}
+
+@media screen and (min-width: 600px) {
+  #addNewRecordBTN{
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+#addNewRecordBTN:hover{
+  transform: scale(1.01); 
+}
+
+
+
+
+/*This is the error message that is under the Add Record Button */
+.error{
+  color: #f8332d;
+  font-size: 3.5vw;
+
+  margin-top: 10px ;
+}
+
+@media screen and (min-width: 600px) {
+  .error{
+    font-size: 2.3vw;
+  }
+}

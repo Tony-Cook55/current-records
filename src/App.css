@@ -1,0 +1,683 @@
+
+
+
+
+
+
+
+
+
+
+
+
+/*Scamming React and using their spinning logo code on a record*/
+.App {
+  text-align: center;
+}
+
+/* This is the picture of the spinning record */
+.RecordSpin {
+  height: 47vmin;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .RecordSpin {               /*RECORDS SPEED */
+    animation: App-logo-spin infinite 4s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* *%*%*%*%*%**%*%*%*% IF YOU HAVE A RECORD PLAYER BEHIND RECORD SPIN ADD THIS *%*%*%*%*%*%*%*%*%*% */
+
+/*
+.RecordSpin {
+  margin-right: 65px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .RecordSpin {
+
+    margin-right: 100px;
+    margin-top: 30px;
+  }
+}
+
+
+
+.recordPlayer{
+  width: 20.5rem;
+  height: auto;
+
+  margin-top: 210px;
+
+}
+
+@media screen and (min-width: 600px) {
+  .recordPlayer{
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px;
+
+  }
+}
+
+
+
+.currentRecordsText{
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  .currentRecordsText{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+*/
+/* *%*%*%*%*%**%*%*%*% IF YOU HAVE A RECORD PLAYER BEHIND RECORD SPIN ADD THIS *%*%*%*%*%*%*%*%*%*% */
+
+
+
+
+
+
+
+/* ````````````````````````````````````````` MY CSS ```````````````````````````````````````````````` */
+/* MY PORTFOLIOS COLORS: #176e82    #e63e23   #f6dbac   #259fa5*/
+
+
+
+/* fffffffffffffffffff FONTS TO USE ffffffffffffffffffff*/
+
+/* This changes the font to the 70s theme to both the search by names and records name and the search button*/
+.turnToDiscoFont{
+  font-family: 'Shrikhand', cursive;
+}
+
+/* turns font into the weird 50's font */
+.turnToFiftiesFont{
+  font-family: 'Risque', cursive;
+}
+
+/* turns font into the atomic age font */
+.turnToAtomicAgeFont{
+  font-family: 'Limelight', cursive;
+}
+
+/* this uses the same atomic age font but adds a crazy neon sign like look */
+.turnToAtomicAgeNeonFont{
+  font-family: 'Limelight', cursive;
+
+  text-shadow:
+  0 0 7px #83dbd4,
+  0 0 10px #83dbd4,
+  0 0 21px #83dbd4;
+
+  animation: pulsate 0.11s ease-in-out infinite alternate;    
+}
+@keyframes pulsate {
+    100% {
+        text-shadow:
+        0 0 4.5px #83dbd4,
+        0 0 8.5px #83dbd4,
+        0 0 10.5px #83dbd4;
+    }
+    0% {
+      text-shadow:
+      0 0 4px #83dbd4,
+      0 0 8px #83dbd4,
+      0 0 10px #83dbd4;
+  }
+}
+/* fffffffffffffffffff FONTS TO USE ffffffffffffffffffff*/
+
+
+
+
+
+
+
+
+/* !!!! THIS CHANGES THE SPACING BETWEEN EACH CARD !!!!! */
+.containerForCard{
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 600px) {
+  .containerForCard{
+    margin-bottom: 50px;
+  }  
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NAV BAR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* NAV BARS BACKGROUND IMAGE IS IN App.jsx cause idk how to do it in css in react??? */
+/* style={{ backgroundImage: `url(${process.env.PUBLIC_URL + 'pictures/backgrounds/fifties/black-checkerboard.png'})`}} */
+
+
+/* ADDS BACKGROUND IMAGE TO NAVBAR */
+.navbar{
+  background-image: url("/public/pictures/backgrounds/fifties/black-checkerboard-white-edge.png");
+
+
+}
+
+.container{
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .container{
+    padding-bottom: 0;
+  }
+}
+
+/* This changes the top text says "My Records" in the nav*/
+.navbar-brand h1{
+  text-transform: uppercase;
+  font-weight: 900;
+
+  /*  Adds a stroke around the letters
+  -webkit-text-stroke-width: 0.01px;
+  -webkit-text-stroke-color: black;
+  */ 
+
+  padding: 10px;
+  line-height: 1;
+
+  /* font-family: Futura, Helvetica, sans-serif;  */
+  font-size: 7vw;
+  
+  color: #25d9c8; 
+  
+}
+
+@media screen and (min-width: 600px) {
+  /* makes the shadow bigger to fit the bigger font */
+  .navbar-brand h1{
+    font-size: 3.5vw;
+
+    
+  }
+}
+
+
+
+/* This is the text box that says Enter a First or Last Name that has the button attached */
+#enterNameTXT{
+  font-size: 2.15vw;
+}
+
+@media screen and (min-width: 600px) {
+  #enterNameTXT{
+    font-size: 1vw;
+  }
+}
+
+
+/* This is the button in the navbar that says Search Name */
+#searchNameBTN{
+
+  font-size: 2.15vw; /* Whatever font size for  #enterNameTXT   is must change it here as well to ensure button is same size */
+  
+  /* Adds the little grow animation on a hover */
+  transition-property: all; 
+  transition-duration: 0.3s; 
+  transition-timing-function: ease; 
+  /* IN :HOVER ADD      transform: scale(1.2); */
+}
+
+@media screen and (min-width: 600px) {
+  #searchNameBTN{
+    font-size: 1vw;
+  }
+}
+
+#searchNameBTN:hover, #searchNameBTN:focus{
+  transform: scale(1.2);
+}
+
+
+/* This is the Dropdown for searching for records by album name*/
+#searchByRecordName{
+  font-size: 2.15vw;
+  color: #595c5f;
+}
+
+@media screen and (min-width: 600px) {
+  #searchByRecordName{
+    font-size: 1vw;
+  }
+}
+
+
+
+
+
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxx ERROR MESSAGE THAT SAYS "Please Enter a Correct Name" FOR  SEARCH TEXT BOX xxxxxxxxxxxxxxxxxxxxx*/
+
+/* This is the error that will show up in the navbar */
+.errorNAV{
+  font-size: 2vw;
+  color: #f8332d;
+
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .errorNAV{
+    font-size: 1vw;
+    color: #f8332d;
+  
+    padding-top: 20px;
+  }
+  
+}
+
+
+/* This is the error that is huge and will appear under the Nav*/
+.errorBIG{
+  font-size: 5.5vw;
+  color: #f8332d;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 600px) {
+  .errorBIG{
+    padding-top: 50px;
+  }
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxx ERROR MESSAGE THAT SAYS "Please Enter a Correct Name" FOR  SEARCH TEXT BOX xxxxxxxxxxxxxxxxxxxxx*/
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NAV BAR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+
+
+
+
+/* This is the Giant Current Records Text */
+.currentRecordsText{
+  text-transform: uppercase;
+  font-weight: 900;
+  margin:  1rem 0;
+
+
+  /* IF I HAVE JUST THE SPINNING RECORD ADD THIS CODE INSTEAD */
+/* 
+  padding-top: 20px;
+  padding-bottom: 2px;
+*/
+
+
+padding-top: 20px;
+padding-bottom: 2px;
+
+
+  line-height: 1;
+  font-family: 'Shrikhand', cursive;
+  /* font-family: Futura, Helvetica, sans-serif;  */
+
+  color: #61dafb;
+
+  font-size: 8.5vw;
+  text-shadow: 2px 2px 0px #f8332d, 5px 5px 0px #f8332d; 
+  
+}
+
+@media screen and (min-width: 600px) {
+  .currentRecordsText{
+
+
+  /* IF I HAVE JUST THE SPINNING RECORD ADD THIS CODE INSTEAD */
+  /*
+    padding-top: 60px;
+    padding-bottom: 30px;
+  */
+
+
+  padding-top: 60px;
+  padding-bottom: 30px;
+
+
+    font-size: 6vw;
+    text-shadow: 5px 5px 0px #f8332d, 8px 8px 0px #f8332d; 
+
+  }
+}
+
+
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ANCHOR LINKS TO TOP AND BOTTOM @@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+/* This is the classes for both the top and bottom anchors  */
+.anchor_link_TOP, .anchor_links_BOTTOM{
+  font-size: 2.8vw;
+  font-family: 'Shrikhand', cursive;
+}
+
+@media screen and (min-width: 600px) {
+  .anchor_link_TOP, .anchor_links_BOTTOM{
+
+    font-size: 1.3vw;
+  }
+}
+
+
+
+/* This is the TOP anchor "Down To Bottom"*/
+.anchor_link_TOP{
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 600px) {
+  .anchor_link_TOP{
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
+}
+
+
+/* This is the BOTTOM anchor "Back To Top"*/
+.anchor_links_BOTTOM{
+  margin-bottom: 70px;
+}
+
+@media screen and (min-width: 600px) {
+  .anchor_links_BOTTOM{
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+}
+
+
+/* This is the actual link text so we made it black and took off the underline*/
+.anchor_link{
+  color: black;
+  text-decoration: none;
+
+  /* On a hover/focus  the text will ease into the color #037298*/
+  transition: color 0.5s ease-out 10ms;
+  
+
+
+}
+
+.anchor_link:hover, .anchor_link:focus{
+  color: #a91e01;
+  text-decoration: none;
+}
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ANCHOR LINKS TO TOP AND BOTTOM @@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+
+
+
+
+
+
+
+
+/* ####################################### MODAL TO ADD NEW RECORD ################################### */
+/*  */
+
+
+
+/* !!!!!!!!!!! THIS IS THE MODEL BUTTON TO CLICK INTO ADD RECORD !!!!!!!!!!*/
+/* This is the actual button always fixed to the bottom of the screen that allows users to add new Record */
+#modal-button{
+  cursor: cell; /* Makes the cursor the little Cross on hover */
+
+
+  font-size: 15px;
+
+  color: #61dafb;
+  background-color: #f8332d;
+
+
+    /* Sets the button off the wall of screen */
+    margin-right: 13px;
+    margin-bottom: 5px;
+
+
+  /* Adds the little grow animation on a hover */
+  transition-property: all; 
+  transition-duration: 0.3s; 
+  transition-timing-function: ease; 
+  /* IN :HOVER ADD      transform: scale(1.2); */
+}
+
+
+#modal-button:hover, #modal-button:focus{
+  transform: scale(1.08); 
+  color: #f8332d;
+  background-color: #61dafb;
+}
+
+
+@media screen and (min-width: 600px) {
+  #modal-button{
+
+    font-size: 25px;
+
+    /* Sets the button off the wall of screen */
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+
+/* The div that holds the add feature*/
+.modal-container{
+  font-family: 'Shrikhand', cursive;
+
+  padding-bottom: 10px;
+}
+/* !!!!!!!!!!! THIS IS THE MODEL BUTTON TO CLICK INTO ADD RECORD !!!!!!!!!!*/
+
+
+
+
+
+
+/* !!!!!!!!!!! CONTENT INSIDE THE MODEL ONCE CLICKED !!!!!!!!!!*/
+
+
+/* ONCE MODAL IS CLICKED WILL BLUR THE BACKGROUND */
+.modal{
+  backdrop-filter: blur(2px);
+}
+
+
+
+
+
+/* `````````` MODAL HEADER `````````*/
+/* This is the modal header that holds the title and the need help text */
+.modal-header{
+  
+}
+
+/* This is the title inside the modal that says "Add Any Record You Want!" */
+.modal-title{
+  font-size: 3.5vw;
+  text-shadow: 1px 1px 0px #f8332d, 2px 2px 0px #f8332d; 
+}
+
+@media screen and (min-width: 600px) {
+  .modal-title{
+    font-size: 2.5vw;
+  }
+}
+
+
+/* This is the Need Help Finding a Record? text in the modal-header */
+.needHelpFinding{
+  color: black;
+
+  font-size: 1.55vw;
+
+  padding-left: 25px;
+  padding-top: 5px;
+
+  text-decoration: none;
+
+
+  /* Adds the little grow animation on a hover */
+  transition-property: all; 
+  transition-duration: 0.3s; 
+  transition-timing-function: ease; 
+  /* IN :HOVER ADD      transform: scale(1.2); */
+}
+
+@media screen and (min-width: 600px) {
+  .needHelpFinding{
+    font-size: 1.05vw;
+    padding-left: 60px;
+  }
+}
+
+.needHelpFinding:hover{
+  color: black;
+  transform: scale(1.22);
+  text-decoration: none;
+}
+
+
+/* This is the small X in the corner of the header that closes modal */
+.xCloseBTN{
+
+  color: lime;
+
+    /* Adds the little grow animation on a hover */
+    transition-property: all; 
+    transition-duration: 0.3s; 
+    transition-timing-function: ease; 
+    /* IN :HOVER ADD      transform: scale(1.2); */
+}
+
+.xCloseBTN:hover{
+  transform: scale(1.2); 
+}
+
+
+/* `````````` MODAL HEADER `````````*/
+
+
+
+
+
+
+/* `````` Actual Content under header ```````*/
+
+/* This is the header that says "Add New Record Heading" */
+.addRecordText{
+  font-size: 5vw;
+  padding-top: 20px;
+}
+
+
+/* This is the text under the "Add New Record Heading" */
+.addingDirections{
+  font-size: 2vw;
+}
+@media screen and (min-width: 600px) {
+  .addingDirections{
+    font-size: 1vw;
+  }
+}
+
+/* `````` Actual Content under header ```````*/
+
+
+
+
+
+/* This is the button at the bottom of the modal that will close the modal */
+#closeModalBTN{
+  margin: 0;
+
+  /* Adds the little grow animation on a hover */
+  transition-property: all; 
+  transition-duration: 0.3s; 
+  transition-timing-function: ease; 
+  /* IN :HOVER ADD      transform: scale(1.2); */
+}
+
+#closeModalBTN:hover{
+  transform: scale(1.2);
+}
+/* !!!!!!!!!!! CONTENT INSIDE THE MODEL ONCE CLICKED !!!!!!!!!!*/
+
+
+/* ####################################### MODAL TO ADD NEW RECORD ################################### */
+
+
+
+
+
+
+
+
+
+
+
+
+
