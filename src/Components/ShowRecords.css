@@ -16,6 +16,43 @@ img{
 
 
 
+
+/* fffffffffffffffffff FONTS TO USE ffffffffffffffffffff*/
+
+/* This changes the font to the 70s theme to both the search by names and records name and the search button*/
+.turnToDiscoFont{
+  font-family: 'Shrikhand', cursive;
+}
+
+/* turns font into the weird 50's font */
+.turnToFiftiesFont{
+  font-family: 'Risque', cursive;
+}
+
+/* turns font into the atomic age font */
+.turnToAtomicAgeFont{
+  font-family: 'Limelight', cursive;
+}
+
+
+/* fffffffffffffffffff FONTS TO USE ffffffffffffffffffff*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* The actual card that contains all the names, dates, and pics*/
 .card{
   height: 100%;  
@@ -101,7 +138,7 @@ img{
 
 /* This is all of the information such as Album Name, Artist Name, and Year */
 .list-group-item{
-  font-family: 'Shrikhand', cursive;
+  /* font-family: 'Shrikhand', cursive; */
   font-size: 5vw;
 
   border: 0;  /* Gets rid of the lines in between the text */
@@ -152,7 +189,7 @@ img{
 /* ^^^^^^^^^^^^^^ NOT IN EDIT MODE NORMAL CARD ^^^^^^^^^^^^^^^^^^^*/
 /* This is the Edit Records Button*/
 .editBTN{
-  font-family: 'Shrikhand', cursive;
+  /* font-family: 'Shrikhand', cursive; */
 
   margin-top: 10px;
   margin-bottom: 15px;
@@ -180,7 +217,7 @@ img{
 
 /* This is the Delete Records Button*/
 .deleteBTN{
-  font-family: 'Shrikhand', cursive;
+  /* font-family: 'Shrikhand', cursive; */
 
 
   color: #fda76a;
@@ -210,7 +247,7 @@ img{
 /* ^^^^^^^^^^^^^^ ACTUALLY IN EDIT MODE CAN CHANGE TEXT ^^^^^^^^^^^^^^^^^^^*/
 /* This is the h3 text that appears once you enter in edit mode*/
 .editRecordText{
-  font-family: 'Shrikhand', cursive;
+  /* font-family: 'Shrikhand', cursive; */
 
   padding-top: 20px;
 

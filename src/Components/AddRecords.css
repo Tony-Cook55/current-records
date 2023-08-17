@@ -1,4 +1,30 @@
 
+/* fffffffffffffffffff FONTS TO USE ffffffffffffffffffff*/
+
+/* This changes the font to the 70s theme to both the search by names and records name and the search button*/
+.turnToDiscoFont{
+  font-family: 'Shrikhand', cursive;
+}
+
+/* turns font into the weird 50's font */
+.turnToFiftiesFont{
+  font-family: 'Risque', cursive;
+}
+
+/* turns font into the atomic age font */
+.turnToAtomicAgeFont{
+  font-family: 'Limelight', cursive;
+}
+
+
+/* fffffffffffffffffff FONTS TO USE ffffffffffffffffffff*/
+
+
+
+
+
+
+
 /* This is the container that holds everything inside the modal */
 .formsContainer{
 

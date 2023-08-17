@@ -54,7 +54,7 @@ function Showrecord(props){
 
 
   //  ````````````````````` OUTPUT FOR CARD AND CARD ITEMS `````````````````````````
-  <div className='card'>
+  <div className='card        turnToAtomicAgeFont   '>
         {!editMode     // WHILE NOT IN EDIT MODE SHOW ORIGINAL RESULTS 
           && 
         <ul className='list-group list-group-flush'>

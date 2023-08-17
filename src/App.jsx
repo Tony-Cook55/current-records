@@ -88,7 +88,7 @@ function App() {
     // if localStorage is found on browser it will save it in local storage
     if(localStorage){       //puts something into the localStorage      // convert this javascript object into a string
       localStorage.setItem('records',JSON.stringify(records));
-      console.log('Change has been saved to local storage                              Here is a Rat eating cheese -->  ᘛ⁐̤ᕐᐷ🧀        ʕ•ᴥ•ʔ HI ');
+      console.log('Change has been saved to local storage                                                                Here is a Rat eating cheese -->  ᘛ⁐̤ᕐᐷ🧀');
     }
     // ^^^^^^^^^^^^^^^ LOCAL STORAGE ^^^^^^^^^^^^^^^
 
@@ -347,10 +347,10 @@ function App() {
 
 
 {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NAVBAR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
-    <nav className="navbar navbar-expand-lg  turnToAtomicAgeNeonFont       sticky-top" >
+    <nav className="navbar navbar-expand-lg     turnToAtomicAgeFont    sticky-top" >
           <div className="container-fluid">
 
-            <a className="navbar-brand dashHorizonFont" href="#0"><h1>Search For Records</h1></a>
+            <a className="navbar-brand    turnToAtomicAgeNeonFont" href="#0"><h1>Search For Records</h1></a>
 
 
 
@@ -365,7 +365,7 @@ function App() {
                     {/* xxxxxxxxxx CALLS IN ERROR MESSAGE xxxxxxxxxx */}
                       <div className="row  flex-row-reverse">
                         <div className="text-center">
-                          {error && <p className="errorNAV  turnToDiscoFont">{error}</p>}
+                          {error && <p className="errorNAV ">{error}</p>}
                         </div>
                       </div>
                     {/* xxxxxxxxxx CALLS IN ERROR MESSAGE xxxxxxxxxx */}
@@ -373,12 +373,12 @@ function App() {
 
 
                     <div className="col">
-                        <div className="input-group   justify-content-center   turnToDiscoFont"> {/*get rid of this to span whole screen --> form-control-inline */}
+                        <div className="input-group   justify-content-center     turnToAtomicAgeFont"> {/*get rid of this to span whole screen --> form-control-inline */}
                           
                           {/* SEARCH BY NAME TEXTBOX */}
                           <input type="text" className="form-control" id="enterNameTXT" 
                                 onChange={evt => setKeywords(evt.currentTarget.value)} value={keywords} 
-                                placeholder="Enter First or Last Name" aria-label="Recipient's username" 
+                                placeholder="Enter Artists Name" aria-label="Recipient's username" 
                                 aria-describedby="button-addon2" >
                           </input>
                           {/* SEARCH BY NAME TEXTBOX */}
@@ -386,7 +386,7 @@ function App() {
 
                             
                           {/* SEARCH BY NAME BUTTON */}
-                          <div className="input-group-append">
+                          <div className="input-group-append   turnToAtomicAgeFont">
                             <button type="button" id="searchNameBTN" className=" btn   btn-outline-secondary" onClick={searchrecords} >
                               <FontAwesomeIcon icon={faSearch}/>
                             </button>      
@@ -407,7 +407,7 @@ function App() {
                   {/* HOLDS THE SEARCH BY RECORD NAME DROPDOWN */}
                     <div className="col">
                       {/* SEARCH BY RECORD NAME DROPDOWN */}
-                        <select value={recordsName}  id="searchByRecordName"   onChange={evt => setrecordsName(evt.currentTarget.value)}   className='form-select    turnToDiscoFont'             onClick={searchrecords}>
+                        <select value={recordsName}  id="searchByRecordName"   onChange={evt => setrecordsName(evt.currentTarget.value)}   className='form-select    turnToAtomicAgeFont'             onClick={searchrecords}>
                                   <option value="">Select Records Name</option>
                                     {/* this will map and set every unique recordsName into an option to choose from in the select box */}
                                     {_(allRecords).map(records => records.recordsName).sort().uniq().map(recordNameSearch => <option key={recordNameSearch} value={recordNameSearch}>{recordNameSearch}</option>).value()   }
@@ -431,7 +431,7 @@ function App() {
 {/*
   <div className="row">
     <div className="text-center">
-      {error && <p className="error  turnToDiscoFont">{error}</p>}
+      {error && <p className="error  turnToAtomicAgeFont">{error}</p>}
     </div>
   </div>
 */}
@@ -442,12 +442,12 @@ function App() {
 
 {/* SEARCH BY FIRST OR LAST NAME 
   <input type="text"   onChange={evt => setKeywords(evt.currentTarget.value)} value={keywords} 
-            className='form-control searchByName  turnToDiscoFont' placeholder='Enter a First or Last Name to Search'  >
+            className='form-control searchByName  turnToAtomicAgeFont' placeholder='Enter a First or Last Name to Search'  >
     </input>
 SEARCH BY FIRST OR LAST NAME */}
 
 {/* BUTTON TO SUBMIT
-<div className="col-md-4    mx-3    turnToDiscoFont">
+<div className="col-md-4    mx-3    turnToAtomicAgeFont">
     <button type="button" id="searchNameBTN" className=" btn btn-secondary" onClick={searchrecords} >
       Search  Name &nbsp; <FontAwesomeIcon icon={faSearch}/>
     </button>
@@ -455,7 +455,7 @@ SEARCH BY FIRST OR LAST NAME */}
 BUTTON TO SUBMIT */}
 
 {/*    SEARCH TEXTBOX AND BUTTON IN 1 ENTITY
-  <div class="input-group   justify-content-center   turnToDiscoFont">
+  <div class="input-group   justify-content-center   turnToAtomicAgeFont">
     <input type="text" class="form-control-inline" onChange={evt => setKeywords(evt.currentTarget.value)} value={keywords}  placeholder="Enter a First or Last Name" aria-label="Recipient's username" aria-describedby="button-addon2" />
       <div class="input-group-append">
         <button type="button" id="searchNameBTN" className=" btn   btn-outline-secondary" onClick={searchrecords} >
@@ -470,6 +470,11 @@ BUTTON TO SUBMIT */}
 
 
 
+
+
+
+
+
 {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ THIS HOLDS THE ShowRecord Call In ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
 
 
@@ -480,7 +485,7 @@ BUTTON TO SUBMIT */}
       <div className='row    allRecords   text-center'>
 
 
-        <h1 className="currentRecordsText">Current records</h1>
+        <h1 className="currentRecordsText    turnToAtomicAgeFont">Cur<span className="flickerAnimation">r</span>ent Recor<span className="flickerAnimation">d</span><span className="brokenLetter">s</span></h1>
 
 
         {/*Scamming React and using their spinning logo code on a record*/}
@@ -497,7 +502,7 @@ BUTTON TO SUBMIT */}
             {/* RECORD PLAYER PIC */}
 
             {/* RECORD SPINNING PIC */}
-            <img src={"pictures/backgrounds/records/vinyl-black.png"} className="RecordSpin" alt="Spinning Record" />
+            <img src={"pictures/backgrounds/records/vinyl-black.png"} className="RecordSpin" alt="" />
             {/* RECORD SPINNING PIC */}
 
           </header>  
@@ -517,7 +522,7 @@ BUTTON TO SUBMIT */}
 
 
           {/*<!-- !!!!!!!!!!!!!!!!!!!!!!!!! DOWN TO BOTTOM ANCHOR TAGS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->*/}
-          <div className=" text-center            find-records" >
+          <div className=" text-center    turnToAtomicAgeFont        find-records" >
               {/*<!-- This sends the user to the back_to_top id. Its set to the top h1-->*/}
               <div className="col">
                 <h2 className="anchor_link_TOP">
@@ -539,7 +544,7 @@ BUTTON TO SUBMIT */}
             {/* xxxxxxxxxx ERROR MESSAGE xxxxxxxxxx */}
             <div className="row">
               <div className="text-center">
-                {error && <p className=" errorBIG turnToDiscoFont">{error}</p>}
+                {error && <p className=" errorBIG    turnToAtomicAgeFont">{error}</p>}
               </div>
             </div>
             {/* xxxxxxxxxx ERROR MESSAGE xxxxxxxxxx */}
@@ -580,7 +585,7 @@ BUTTON TO SUBMIT */}
 
 
     {/*<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BACK TO TOP ANCHOR TAGS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->*/}
-      <div className=" text-center           find-records">
+      <div className=" text-center    turnToAtomicAgeFont       find-records">
         {/*<!-- This sends the user to the back_to_top id. Its set to the top h1-->*/}
         <div className="col">
           <h2 className="anchor_links_BOTTOM">
@@ -604,7 +609,7 @@ BUTTON TO SUBMIT */}
 
 
 {/* ++++++++++++++++++++++++++++++++++ ADD RECORDS MODAL +++++++++++++++++++++++++++++++++++ */}
-<div className="modal-container  text-end   fixed-bottom  "> {/*      fixed-bottom     */}
+<div className="modal-container  text-end   fixed-bottom  turnToAtomicAgeFont"> {/*      fixed-bottom     */}
 
     {/* Button trigger modal */}
     <button type="button" id="modal-button" className=" btn     " data-backdrop="false" data-toggle="modal" data-target="#addRecordFormModal">
@@ -618,7 +623,7 @@ BUTTON TO SUBMIT */}
         <div className="modal-content">
             <div className="modal-header">
 
-                      <h5 className="modal-title" id="addAnyRecordHeader">Add Any Record You Want!</h5> 
+                      <h5 className="modal-title" id="addAnyRecordHeader">Add Any Record!</h5> 
                       
                       <a className="needHelpFinding  " href="https://www.discogs.com/" target="blank">Need Help Finding a Record?</a>
 

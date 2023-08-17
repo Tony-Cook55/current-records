@@ -81,11 +81,11 @@ function Addrecord(props){ // calling the <Addrecord   addrecord={addrecord}/> f
 
 
   return(                           
-    <div className="row   formsContainer    justify-content-center">
+    <div className="row   formsContainer    justify-content-center     turnToAtomicAgeFont">
 
       {/* FILE UPLOAD BUTTON */}
       <div className=" row text-center">
-        <label htmlFor="fileUpload" className="form-label  fileUploadLabel  labelsForTXTs">Records Album Cover</label>
+        <label htmlFor="fileUpload" className="form-label  fileUploadLabel  labelsForTXTs">Album Cover</label>
           <input type="file" name="fileUpload"  className="chooseFileInput "    onChange={imageUpdate}    ></input>
 
       
@@ -151,8 +151,8 @@ function Addrecord(props){ // calling the <Addrecord   addrecord={addrecord}/> f
 
                 {/* xxxxxxxxxx ERROR MESSAGE xxxxxxxxxx */}
                 <div className="text-center">
-                          {error && <p className="error  turnToDiscoFont">{error}</p>}
-                        </div>
+                          {error && <p className="error  turnToAtomicAgeFont">{error}</p>}
+                </div>
                 {/* xxxxxxxxxx ERROR MESSAGE xxxxxxxxxx */}
 
 

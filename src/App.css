@@ -114,6 +114,20 @@
 /* ````````````````````````````````````````` MY CSS ```````````````````````````````````````````````` */
 /* MY PORTFOLIOS COLORS: #176e82    #e63e23   #f6dbac   #259fa5*/
 
+/* 70's type text shadow */
+/*
+  letter-spacing: 10px;
+  text-shadow: -2px 2px 0 #292322,
+    -4px 4px 0 #f60,
+    -6px 6px 0 #292322,
+    -8px 8px 0 #fc0;
+  text-transform: uppercase; 
+*/
+
+
+
+
+
 
 
 /* fffffffffffffffffff FONTS TO USE ffffffffffffffffffff*/
@@ -136,28 +150,20 @@
 /* this uses the same atomic age font but adds a crazy neon sign like look */
 .turnToAtomicAgeNeonFont{
   font-family: 'Limelight', cursive;
+  text-transform: uppercase;
 
-  text-shadow:
-  0 0 7px #83dbd4,
-  0 0 10px #83dbd4,
-  0 0 21px #83dbd4;
+  color: #fff; 
 
-  animation: pulsate 0.11s ease-in-out infinite alternate;    
+  text-shadow: 0 -1px 0 #378d98,
+    0 2px 0 #378d98,
+    0 4px 0 #61dafb,
+    -2px -2px 15px #f06,
+    2px -2px 15px #f06,
+    -2px 2px 15px #f06,
+    2px 2px 15px #f06;
+
 }
-@keyframes pulsate {
-    100% {
-        text-shadow:
-        0 0 4.5px #83dbd4,
-        0 0 8.5px #83dbd4,
-        0 0 10.5px #83dbd4;
-    }
-    0% {
-      text-shadow:
-      0 0 4px #83dbd4,
-      0 0 8px #83dbd4,
-      0 0 10px #83dbd4;
-  }
-}
+
 /* fffffffffffffffffff FONTS TO USE ffffffffffffffffffff*/
 
 
@@ -217,10 +223,9 @@
   padding: 10px;
   line-height: 1;
 
-  /* font-family: Futura, Helvetica, sans-serif;  */
   font-size: 7vw;
   
-  color: #25d9c8; 
+  color: #fff; 
   
 }
 
@@ -349,13 +354,12 @@
 */
 
 
-padding-top: 20px;
-padding-bottom: 2px;
+  padding-top: 20px;
+  padding-bottom: 2px;
 
 
   line-height: 1;
-  font-family: 'Shrikhand', cursive;
-  /* font-family: Futura, Helvetica, sans-serif;  */
+
 
   color: #61dafb;
 
@@ -366,24 +370,90 @@ padding-bottom: 2px;
 
 @media screen and (min-width: 600px) {
   .currentRecordsText{
-
-
   /* IF I HAVE JUST THE SPINNING RECORD ADD THIS CODE INSTEAD */
   /*
     padding-top: 60px;
     padding-bottom: 30px;
   */
 
-
-  padding-top: 60px;
-  padding-bottom: 30px;
-
-
+    padding-top: 60px;
+    padding-bottom: 30px;
     font-size: 6vw;
-    text-shadow: 5px 5px 0px #f8332d, 8px 8px 0px #f8332d; 
+
+
+    color: #fff; 
+
+    text-shadow: 0 -1px 0 #ffd95c,
+      0 2px 0 #ff91bb, 
+      0 4px 0 #ff91bb,
+      -2px -5px 10px #e81b23,
+      5px -2px 10px #e81b23,
+      -2px 2px 15px #e81b23,
+      2px 2px 15px #e81b23; 
+
+
 
   }
 }
+
+
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% ANIMATIONS %%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+
+/* this is the flicker animation that i put to be on some of the letters */
+.flickerAnimation{
+  animation: flicker 2.8s infinite alternate;
+}
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 -1px 0 #ffd95c,
+      0 2px 0 #ff91bb, 
+      0 4px 0 #ff91bb,
+      -2px -5px 10px #e81b23,
+      5px -2px 10px #e81b23,
+      -2px 2px 15px #e81b23,
+      2px 2px 15px #e81b23; 
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+
+
+
+/* THIS WILL BE ADDED TO ANY LETTER YOU WANT TO SWING UPSIDE DOWN AS IF IT IS BROKE */
+.brokenLetter {
+  /* ROTATES THE LETTER 
+  display: inline-block;
+  transform: rotate(8deg);
+  */
+
+  display: inline-block;
+
+
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center 96px; /* The  */
+  /* box-shadow: 5px 5px 10px rgba(0,0,0,0.5); */
+}
+@keyframes swing {
+  0% { transform: rotate(-172deg);}
+  100% { transform: rotate(-185deg); }
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% ANIMATIONS %%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+
+
+
+
 
 
 
@@ -399,7 +469,7 @@ padding-bottom: 2px;
 /* This is the classes for both the top and bottom anchors  */
 .anchor_link_TOP, .anchor_links_BOTTOM{
   font-size: 2.8vw;
-  font-family: 'Shrikhand', cursive;
+  /* font-family: 'Shrikhand', cursive; */
 }
 
 @media screen and (min-width: 600px) {
@@ -526,7 +596,7 @@ padding-bottom: 2px;
 
 /* The div that holds the add feature*/
 .modal-container{
-  font-family: 'Shrikhand', cursive;
+  /* font-family: 'Shrikhand', cursive; */ 
 
   padding-bottom: 10px;
 }
@@ -557,13 +627,13 @@ padding-bottom: 2px;
 
 /* This is the title inside the modal that says "Add Any Record You Want!" */
 .modal-title{
-  font-size: 3.5vw;
+  font-size: 4.5vw;
   text-shadow: 1px 1px 0px #f8332d, 2px 2px 0px #f8332d; 
 }
 
 @media screen and (min-width: 600px) {
   .modal-title{
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 }
 
@@ -572,7 +642,7 @@ padding-bottom: 2px;
 .needHelpFinding{
   color: black;
 
-  font-size: 1.55vw;
+  font-size: 2vw;
 
   padding-left: 25px;
   padding-top: 5px;
@@ -589,14 +659,14 @@ padding-bottom: 2px;
 
 @media screen and (min-width: 600px) {
   .needHelpFinding{
-    font-size: 1.05vw;
-    padding-left: 60px;
+    font-size: 0.8vw;
+    padding-left: 90px;
   }
 }
 
 .needHelpFinding:hover{
   color: black;
-  transform: scale(1.22);
+  transform: scale(1.1);
   text-decoration: none;
 }
 
@@ -631,6 +701,13 @@ padding-bottom: 2px;
 .addRecordText{
   font-size: 5vw;
   padding-top: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .addRecordText{
+    font-size: 4vw;
+    padding-top: 20px;
+  }
 }
 
 
