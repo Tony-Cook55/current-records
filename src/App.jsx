@@ -52,7 +52,6 @@ function App() {
 
 
 
-
     // IF THERES NO LOCAL STORAGE ADD THIS    DELETE COMMENTS TO RESTORE THE SEED DATA
     //saveRecords(records);   // DELETE ME DELETE ME DELETE ME NEEDED TO RESET BACK TO SEED DATA
 
@@ -62,14 +61,13 @@ function App() {
         // Every after time past the very first load it will load whats out of local storage to pull our previously saved data
         if(localStorage){              // parses a string into a javascript method (READ operation)
           const recordsLocalStorage = JSON.parse(localStorage.getItem('records'));
-    
           if(recordsLocalStorage){ // if local storage has data in it, it will put that into saveStudents 
             saveRecords(recordsLocalStorage);
+          } 
+          else{  // when not using localStorage (the first time) it will do our seeded data array
+            saveRecords(records);
           }
     
-        }
-        else{  // when not using localStorage (the first time) it will do our seeded data array
-          saveRecords(records);
         }
     // ^^^^^^^^^^^^^^^ LOCAL STORAGE ^^^^^^^^^^^^^^^
 
@@ -88,7 +86,6 @@ function App() {
     // if localStorage is found on browser it will save it in local storage
     if(localStorage){       //puts something into the localStorage      // convert this javascript object into a string
       localStorage.setItem('records',JSON.stringify(records));
-      console.log('Change has been saved to local storage                                                                Here is a Rat eating cheese -->  ᘛ⁐̤ᕐᐷ🧀');
     }
     // ^^^^^^^^^^^^^^^ LOCAL STORAGE ^^^^^^^^^^^^^^^
 
@@ -210,7 +207,7 @@ function App() {
     {     
       id: nanoid(),    // this gives every new record a unique id per each record 
       recordsName: "A Man and His Music",
-      image: "pictures/frank_sinatra/FRANK_SINATRA_a_man_and_his_music.jpg",
+      image: require('./pictures/frank_sinatra/FRANK_SINATRA_a_man_and_his_music.jpg'),
       artistsFirstName: "Frank",
       artistsLastName: "Sinatra",
       musicGenre: "Jazz"
@@ -218,7 +215,7 @@ function App() {
     {
       id: nanoid(),
       recordsName: "Sinatra Sinatra",
-      image: "pictures/frank_sinatra/FRANK_SINATRA_sinatra_sinatra_a_collection_of_his_favorites.jpg",
+      image: require('./pictures/frank_sinatra/FRANK_SINATRA_sinatra_sinatra_a_collection_of_his_favorites.jpg'),
       artistsFirstName: "Frank",
       artistsLastName: "Sinatra",
       musicGenre: "Jazz"
@@ -226,7 +223,7 @@ function App() {
     {
       id: nanoid(),
       recordsName: "She Shot Me Down",
-      image: "pictures/frank_sinatra/FRANK_SINATRA_she_shot_me_down.jpg",
+      image: require("./pictures/frank_sinatra/FRANK_SINATRA_she_shot_me_down.jpg"),
       artistsFirstName: "Frank",
       artistsLastName: "Sinatra",
       musicGenre: "Jazz"
@@ -238,7 +235,7 @@ function App() {
     {
       id: nanoid(),
       recordsName: "Warm and Willing",
-      image: "pictures/andy_williams/ANDY_WILLIAMS_warm_and_willing.jpg",
+      image: require("./pictures/andy_williams/ANDY_WILLIAMS_warm_and_willing.jpg"),
       artistsFirstName: "Andy",
       artistsLastName: "Williams",
       musicGenre: "Jazz"
@@ -314,6 +311,8 @@ function App() {
       artistsFirstName: "Dean",
       artistsLastName: "Martin",
       musicGenre: "Jazz"
+      //       <img src={process.env.PUBLIC_URL + "/pictures/backgrounds/records/vinyl-black.png"} className="RecordSpin" alt="" />
+
     },
     // ~~~~~~~~~~ DEAN MARTIN ~~~~~~~~~~~~~~~ 
   ];
@@ -485,7 +484,15 @@ BUTTON TO SUBMIT */}
       <div className='row    allRecords   text-center'>
 
 
-        <h1 className="currentRecordsText    turnToAtomicAgeFont">Cur<span className="flickerAnimation">r</span>ent Recor<span className="flickerAnimation">d</span><span className="brokenLetter">s</span></h1>
+        {/* Current Records Text */}
+        <h1 className="currentRecordsText    turnToAtomicAgeFont">
+          Cur<span className="flickerAnimation">r</span>ent 
+          Recor<span className="flickerAnimation">d</span><span className="brokenLetter">s</span>
+        </h1>
+        {/* Current Records Text */}
+
+
+
 
 
         {/*Scamming React and using their spinning logo code on a record*/}
@@ -502,7 +509,7 @@ BUTTON TO SUBMIT */}
             {/* RECORD PLAYER PIC */}
 
             {/* RECORD SPINNING PIC */}
-            <img src={"pictures/backgrounds/records/vinyl-black.png"} className="RecordSpin" alt="" />
+            <img src={require("./pictures/backgrounds/records/vinyl-black.png")} className="RecordSpin" alt="" />
             {/* RECORD SPINNING PIC */}
 
           </header>  

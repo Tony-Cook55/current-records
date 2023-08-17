@@ -195,7 +195,7 @@
 
 /* ADDS BACKGROUND IMAGE TO NAVBAR */
 .navbar{
-  background-image: url("/public/pictures/backgrounds/fifties/black-checkerboard-white-edge.png");
+  background-image: url("./pictures/backgrounds/fifties/black-checkerboard-white-edge.png");
 
 
 }
