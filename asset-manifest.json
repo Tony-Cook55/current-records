@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/current-records/static/css/main.784bf315.css",
+    "main.css": "/current-records/static/css/main.7073b57a.css",
     "main.js": "/current-records/static/js/main.4f4d862a.js",
     "static/js/787.6653abfd.chunk.js": "/current-records/static/js/787.6653abfd.chunk.js",
     "static/media/checkered_floor_sliding.gif": "/current-records/static/media/checkered_floor_sliding.dbb7961c75522d39a6ef.gif",
@@ -19,12 +19,12 @@
     "static/media/FRANK_SINATRA_she_shot_me_down.jpg": "/current-records/static/media/FRANK_SINATRA_she_shot_me_down.15be85f378f88d2820d3.jpg",
     "static/media/ANDY_WILLIAMS_warm_and_willing.jpg": "/current-records/static/media/ANDY_WILLIAMS_warm_and_willing.4a69a8c167a5a008bc22.jpg",
     "index.html": "/current-records/index.html",
-    "main.784bf315.css.map": "/current-records/static/css/main.784bf315.css.map",
+    "main.7073b57a.css.map": "/current-records/static/css/main.7073b57a.css.map",
     "main.4f4d862a.js.map": "/current-records/static/js/main.4f4d862a.js.map",
     "787.6653abfd.chunk.js.map": "/current-records/static/js/787.6653abfd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.784bf315.css",
+    "static/css/main.7073b57a.css",
     "static/js/main.4f4d862a.js"
   ]
 }
