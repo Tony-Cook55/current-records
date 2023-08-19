@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/current-records/static/css/main.4fa0aa0c.css",
-    "main.js": "/current-records/static/js/main.90564776.js",
+    "main.js": "/current-records/static/js/main.69c0b8c3.js",
     "static/js/787.6653abfd.chunk.js": "/current-records/static/js/787.6653abfd.chunk.js",
     "static/media/checkered_floor_sliding.gif": "/current-records/static/media/checkered_floor_sliding.dbb7961c75522d39a6ef.gif",
     "static/media/checkered_floor_sliding_up.gif": "/current-records/static/media/checkered_floor_sliding_up.73d2aae2c0d027eac6db.gif",
@@ -20,11 +20,11 @@
     "static/media/ANDY_WILLIAMS_warm_and_willing.jpg": "/current-records/static/media/ANDY_WILLIAMS_warm_and_willing.4a69a8c167a5a008bc22.jpg",
     "index.html": "/current-records/index.html",
     "main.4fa0aa0c.css.map": "/current-records/static/css/main.4fa0aa0c.css.map",
-    "main.90564776.js.map": "/current-records/static/js/main.90564776.js.map",
+    "main.69c0b8c3.js.map": "/current-records/static/js/main.69c0b8c3.js.map",
     "787.6653abfd.chunk.js.map": "/current-records/static/js/787.6653abfd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4fa0aa0c.css",
-    "static/js/main.90564776.js"
+    "static/js/main.69c0b8c3.js"
   ]
 }
