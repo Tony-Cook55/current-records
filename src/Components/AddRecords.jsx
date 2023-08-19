@@ -83,6 +83,15 @@ function Addrecord(props){ // calling the <Addrecord   addrecord={addrecord}/> f
   return(                           
     <div className="row   formsContainer    justify-content-center     turnToAtomicAgeFont">
 
+
+                {/* xxxxxxxxxx ERROR MESSAGE xxxxxxxxxx */}
+                <div className="text-center">
+                          {error && <p className="error  turnToAtomicAgeFont">{error}</p>}
+                </div>
+                {/* xxxxxxxxxx ERROR MESSAGE xxxxxxxxxx */}
+
+
+
       {/* FILE UPLOAD BUTTON */}
       <div className=" row text-center">
         <label htmlFor="fileUpload" className="form-label  fileUploadLabel  labelsForTXTs">Album Cover</label>
@@ -130,7 +139,7 @@ function Addrecord(props){ // calling the <Addrecord   addrecord={addrecord}/> f
       <div className="row">
         <label htmlFor="txtmusicGenre" className="form-label  labelsForTXTs">Music Genre</label>
           {/* coding an event for the onChange that will set the artistsLastName variable to the textbox value */}
-          <input type="musicGenre"     onChange={(evt) => setmusicGenre(evt.currentTarget.value)} value={musicGenre}  
+          <input type="text"     onChange={(evt) => setmusicGenre(evt.currentTarget.value)} value={musicGenre}  
                   id="txtmusicGenre" className="form-control"   placeholder="Enter Music Genre"                             >  
           </input>                                                              
       </div>
@@ -140,7 +149,7 @@ function Addrecord(props){ // calling the <Addrecord   addrecord={addrecord}/> f
 
       {/* SUBMIT BUTTON */}
       <div className="row">                                                                                                {/* data-dismiss="modal" == THIS WILL CLOSE THE MODAL ONCE CLICKED GET RID OF THIS AND READD THE CLOSE BUTTON IF YOU DON'T LIKE IT*/}
-        <button type="button"    onClick={addStudentClick}     id="addNewRecordBTN" className="btn btn-success btn-lg"              >
+        <button type="button"    onClick={addStudentClick}     id="addNewRecordBTN" className="btn  btn-lg"         data-dismiss="modal"      >
             Add New Record &nbsp;<FontAwesomeIcon icon={faPlusCircle}/>
         </button>
       </div>

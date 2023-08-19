@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 // FONT AWESOME IMPORTS 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'   
 // Call in the chosen icon like this   <FontAwesomeIcon icon={faWarning}/>
-import { faWarning, faMagicWandSparkles} from '@fortawesome/free-solid-svg-icons'   // gives you any Icon you want
+import { faTrashAlt, faPencilAlt} from '@fortawesome/free-solid-svg-icons'   // gives you any Icon you want
 
 
 
@@ -57,43 +57,45 @@ function Showrecord(props){
   <div className='card        turnToAtomicAgeFont   '>
         {!editMode     // WHILE NOT IN EDIT MODE SHOW ORIGINAL RESULTS 
           && 
-        <ul className='list-group list-group-flush'>
+        <ul className='list-group list-group-flush  '>
           {/* className='list-group-item   ==   turns off the bullet points for the list items*/}
           
           {/* RECORD NAME */}
-          <li className='list-group-item   text-center' id="albumName">{props.record.recordsName}</li>     {/* calls the records recordsName */}
+          <li className='list-group-item  opacityBackground text-center ' id="albumName">{props.record.recordsName}</li>     {/* calls the records recordsName */}
           {/* RECORD NAME */}
 
           {/* IMAGE  */}
-          <img src={props.record.image} alt="Record Cover" className='card-img-top mx-auto  img-fluid' /> {/*calls each individual image without hardcoding it*/}
+          <span className="opacityBackground">
+            <img src={props.record.image} alt="Record Cover" className='card-img-top mx-auto img-fluid' /> {/*calls each individual image without hardcoding it*/}
+          </span>
           {/* IMAGE */}
 
           {/* FIRST NAME   &&   LAST NAME*/}                  {/* FIRST NAME */}                {/* LAST NAME */}                               
-          <li className='list-group-item  firstNamelastName  text-center'>{props.record.artistsFirstName}  {props.record.artistsLastName}</li> {/*  calls the records name  */}
+          <li className='list-group-item  firstNamelastName opacityBackground text-center'>{props.record.artistsFirstName}  {props.record.artistsLastName}</li> {/*  calls the records name  */}
           {/* FIRST NAME   &&   LAST NAME*/}                                                 
 
           {/* MUSIC GENRE */}
-          <li className='list-group-item  musicGenre  text-center'>{props.record.musicGenre}</li>     {/* calls the records musicGenre */}
+          <li className='list-group-item  musicGenre opacityBackground text-center'>{props.record.musicGenre}</li>     {/* calls the records musicGenre */}
           {/* MUSIC GENRE */}
           {/* ````````````````````` OUTPUT FOR CARD AND CARD ITEMS `````````````````````````  */}
 
 
+          <span className="buttonsContainer opacityBackground">
+            {/* EDIT BUTTON */}                                       {/* onClick will set the edit mode to true thus firing the if statement and make the inputs shown */}
+              <button  type="button" className="editBTN  btn    btn-block     mt-auto"  onClick={() => setEditMode(true)}>
+                Edit Record <FontAwesomeIcon icon={faPencilAlt}/>
+              </button>
+            {/* EDIT BUTTON */}
 
-          {/* EDIT BUTTON */}                                       {/* onClick will set the edit mode to true thus firing the if statement and make the inputs shown */}
-            <button  type="button" className="editBTN  btn         mt-auto"  onClick={() => setEditMode(true)}>
-              Edit Record <FontAwesomeIcon icon={faMagicWandSparkles}/>
-            </button>
-          {/* EDIT BUTTON */}
 
-
-          {/* DELETE BUTTON */}
-          {/* This will show a button that onClick will call the specific record they click on and that component will be sent to the deleterecords Function */}
-          <button type="button" className="deleteBTN btn            mt-auto" 
-              onClick={() => props.deleterecords(props.record)}>
-                Delete Record <FontAwesomeIcon icon={faWarning}/>
-            </button>
-          {/* DELETE BUTTON */}
-
+            {/* DELETE BUTTON */}
+            {/* This will show a button that onClick will call the specific record they click on and that component will be sent to the deleterecords Function */}
+            <button type="button" className="deleteBTN btn       btn-block    mt-auto" 
+                onClick={() => props.deleterecords(props.record)}>
+                  Delete Record <FontAwesomeIcon icon={faTrashAlt}/>
+              </button>
+            {/* DELETE BUTTON */}
+          </span>
 
         </ul>
         }

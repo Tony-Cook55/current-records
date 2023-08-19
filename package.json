@@ -1,7 +1,7 @@
 {
 
 
-  "homepage": "http://Tony-Cook55.github.io/react-app",
+
 
 
   "name": "react_final",
@@ -10,6 +10,9 @@
   "version": "0.1.0",
 
 
+  "homepage": "http://Tony-Cook55.github.io/current-records",
+
+  
   "private": true,
 
 

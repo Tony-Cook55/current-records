@@ -53,7 +53,10 @@ function App() {
 
 
     // IF THERES NO LOCAL STORAGE ADD THIS    DELETE COMMENTS TO RESTORE THE SEED DATA
-    //saveRecords(records);   // DELETE ME DELETE ME DELETE ME NEEDED TO RESET BACK TO SEED DATA
+
+      saveRecords(records);   // DELETE ME DELETE ME DELETE ME NEEDED TO RESET BACK TO SEED DATA
+
+    // IF THERES NO LOCAL STORAGE ADD THIS    DELETE COMMENTS TO RESTORE THE SEED DATA
 
 
 
@@ -86,6 +89,7 @@ function App() {
     // if localStorage is found on browser it will save it in local storage
     if(localStorage){       //puts something into the localStorage      // convert this javascript object into a string
       localStorage.setItem('records',JSON.stringify(records));
+      console.log("Changes Have Been Saved To Local Storage!");
     }
     // ^^^^^^^^^^^^^^^ LOCAL STORAGE ^^^^^^^^^^^^^^^
 
@@ -155,6 +159,8 @@ function App() {
       // IF THE SEARCH RESULT IS WRONG AND DOSE'NT MATCH WE SET setError TO OUR MESSAGE
       if (searchResults.length === 0) {
         setError("Please Enter a Correct Name");
+        console.log("The Name You Entered Is Invalid. Please Enter a Artists Name.");
+        console.log("THIS IS TO SEE IF I CAN PUSH TO LIVE!");
       }
       // xxxxxxxxxx ERROR MESSAGE xxxxxxxxxx
 
@@ -207,15 +213,15 @@ function App() {
     {     
       id: nanoid(),    // this gives every new record a unique id per each record 
       recordsName: "A Man and His Music",
-      image: require('./pictures/frank_sinatra/FRANK_SINATRA_a_man_and_his_music.jpg'),
+      image: require("./pictures/frank_sinatra/FRANK_SINATRA_a_man_and_his_music.jpg"),
       artistsFirstName: "Frank",
       artistsLastName: "Sinatra",
       musicGenre: "Jazz"
     }, 
     {
-      id: nanoid(),
-      recordsName: "Sinatra Sinatra",
-      image: require('./pictures/frank_sinatra/FRANK_SINATRA_sinatra_sinatra_a_collection_of_his_favorites.jpg'),
+      id: nanoid(),                 // INVISIBLE CHARACTER --> (ㅤ) <-- inside 
+      recordsName: "Sinatra Sinatraㅤ",
+      image: require("./pictures/frank_sinatra/FRANK_SINATRA_sinatra_sinatra_a_collection_of_his_favorites.jpg"),
       artistsFirstName: "Frank",
       artistsLastName: "Sinatra",
       musicGenre: "Jazz"
@@ -243,7 +249,7 @@ function App() {
     {
       id: nanoid(),
       recordsName: "To You Sweetheart",
-      image: "pictures/andy_williams/ANDY_WILLIAMS_to_you_sweetheart,_aloha.jpg",
+      image: require("./pictures/andy_williams/ANDY_WILLIAMS_to_you_sweetheart,_aloha.jpg"),
       artistsFirstName: "Andy",
       artistsLastName: "Williams",
       musicGenre: "Jazz"
@@ -251,7 +257,7 @@ function App() {
     {
       id: nanoid(),
       recordsName: "Days of Wine and Roses",
-      image: "pictures/andy_williams/ANDY_WILLIAMS_days_of_wine_and_roses.jpg",
+      image: require("./pictures/andy_williams/ANDY_WILLIAMS_days_of_wine_and_roses.jpg"),
       artistsFirstName: "Andy",
       artistsLastName: "Williams",
       musicGenre: "60's Pop"
@@ -263,15 +269,15 @@ function App() {
     {
       id: nanoid(),
       recordsName: "Spirits Having Flown",
-      image: "pictures/bee_Gees/BEE_GEES_spirits_having_flown.jpg",
+      image: require("./pictures/bee_Gees/BEE_GEES_spirits_having_flown.jpg"),
       artistsFirstName: "Bee",
       artistsLastName: "Gees",
       musicGenre: "Disco"
     },
     {
-      id: nanoid(),
-      recordsName: "The Bee Gees 1st",
-      image: "pictures/bee_Gees/BEE_GEES_bee_gees_1st.jpg",
+      id: nanoid(),                    // THIS IS AN INVISIBLE CHARACTER (ㅤ)its scummy and bad code but I can't make all pics align
+      recordsName: "The Bee Gees 1stㅤ",
+      image: require("./pictures/bee_Gees/BEE_GEES_bee_gees_1st.jpg"),
       artistsFirstName: "Bee",
       artistsLastName: "Gees",
       musicGenre: "Psychedelic Rock"
@@ -279,7 +285,7 @@ function App() {
     {
       id: nanoid(),
       recordsName: "Bee Gees Mr. Natural",
-      image: "pictures/bee_Gees/BEE_GEES_mr._natural.jpg",
+      image: require("./pictures/bee_Gees/BEE_GEES_mr._natural.jpg"),
       artistsFirstName: "Bee",
       artistsLastName: "Gees",
       musicGenre: "Rock"
@@ -291,7 +297,7 @@ function App() {
     {
       id: nanoid(),
       recordsName: "Gentle On my Mind",
-      image: "pictures/Dean_Martin/DEAN_MARTIN_gentle_on_my_mind.jpg",
+      image: require("./pictures/Dean_Martin/DEAN_MARTIN_gentle_on_my_mind.jpg"),
       artistsFirstName: "Dean",
       artistsLastName: "Martin",
       musicGenre: "Jazz"
@@ -299,7 +305,7 @@ function App() {
     {
       id: nanoid(),
       recordsName: "Italian Love Songs",
-      image: "pictures/Dean_Martin/DEAN_MARTIN_italian_love_songs.jpg",
+      image: require("./pictures/Dean_Martin/DEAN_MARTIN_italian_love_songs.jpg"),
       artistsFirstName: "Dean",
       artistsLastName: "Martin",
       musicGenre: "60's Pop"
@@ -307,7 +313,7 @@ function App() {
     {
       id: nanoid(),
       recordsName: "You Can't Love 'Em All",
-      image: "pictures/Dean_Martin/DEAN_MARTIN_you_cant_love_'em_all.jpg",
+      image: require("./pictures/Dean_Martin/DEAN_MARTIN_you_cant_love_'em_all.jpg"),
       artistsFirstName: "Dean",
       artistsLastName: "Martin",
       musicGenre: "Jazz"
@@ -346,10 +352,12 @@ function App() {
 
 
 {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NAVBAR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
-    <nav className="navbar navbar-expand-lg     turnToAtomicAgeFont    sticky-top" >
+    <nav className="navbar navbar-expand-lg   checkeredBackgroundPic   turnToAtomicAgeFont    sticky-top" >
           <div className="container-fluid">
 
-            <a className="navbar-brand    turnToAtomicAgeNeonFont" href="#0"><h1>Search For Records</h1></a>
+
+            {/* GIANT Search For records Text in Navbar */}
+            <a className="navbar-brand  add3dTextShadow  turnToAtomicAgeFont" href="#0"><h1>Search For Records</h1></a>
 
 
 
@@ -361,32 +369,32 @@ function App() {
 
 
 
-                    {/* xxxxxxxxxx CALLS IN ERROR MESSAGE xxxxxxxxxx */}
+                    {/* xxxxxxxxxx ERROR MESSAGE xxxxxxxxxx */}
                       <div className="row  flex-row-reverse">
-                        <div className="text-center">
-                          {error && <p className="errorNAV ">{error}</p>}
+                        <div className="text-center   turnToAtomicAgeFont   ">
+                          {error && <p className="errorNAV">{error}</p>}
                         </div>
                       </div>
-                    {/* xxxxxxxxxx CALLS IN ERROR MESSAGE xxxxxxxxxx */}
+                    {/* xxxxxxxxxx ERROR MESSAGE xxxxxxxxxx */}
 
 
 
-                    <div className="col">
+                    <div className="col ">
                         <div className="input-group   justify-content-center     turnToAtomicAgeFont"> {/*get rid of this to span whole screen --> form-control-inline */}
                           
                           {/* SEARCH BY NAME TEXTBOX */}
                           <input type="text" className="form-control" id="enterNameTXT" 
                                 onChange={evt => setKeywords(evt.currentTarget.value)} value={keywords} 
                                 placeholder="Enter Artists Name" aria-label="Recipient's username" 
-                                aria-describedby="button-addon2" >
+                                aria-describedby="button-addon2"  >
                           </input>
                           {/* SEARCH BY NAME TEXTBOX */}
 
 
                             
                           {/* SEARCH BY NAME BUTTON */}
-                          <div className="input-group-append   turnToAtomicAgeFont">
-                            <button type="button" id="searchNameBTN" className=" btn   btn-outline-secondary" onClick={searchrecords} >
+                          <div className="input-group-append">
+                            <button type="button" id="searchNameBTN" className=" btn   " onClick={searchrecords} >
                               <FontAwesomeIcon icon={faSearch}/>
                             </button>      
                           </div>
@@ -486,11 +494,10 @@ BUTTON TO SUBMIT */}
 
         {/* Current Records Text */}
         <h1 className="currentRecordsText    turnToAtomicAgeFont">
-          Cur<span className="flickerAnimation">r</span>ent 
-          Recor<span className="flickerAnimation">d</span><span className="brokenLetter">s</span>
+          Cur<span className="flickerAnimationSHORT">r</span>ent 
+          <span className="flickerAnimationLONG"> R</span>ecor<span className="flickerAnimationSHORT">d</span><span className="">s</span>
         </h1>
         {/* Current Records Text */}
-
 
 
 
@@ -524,12 +531,8 @@ BUTTON TO SUBMIT */}
 
 
 
-
-
-
-
           {/*<!-- !!!!!!!!!!!!!!!!!!!!!!!!! DOWN TO BOTTOM ANCHOR TAGS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->*/}
-          <div className=" text-center    turnToAtomicAgeFont        find-records" >
+          <div className=" text-center    turnToAtomicAgeFont       find-records" >
               {/*<!-- This sends the user to the back_to_top id. Its set to the top h1-->*/}
               <div className="col">
                 <h2 className="anchor_link_TOP">
@@ -551,7 +554,7 @@ BUTTON TO SUBMIT */}
             {/* xxxxxxxxxx ERROR MESSAGE xxxxxxxxxx */}
             <div className="row">
               <div className="text-center">
-                {error && <p className=" errorBIG    turnToAtomicAgeFont">{error}</p>}
+                {error && <p className=" errorBIG  turnToAtomicAgeFont">{error}</p>}
               </div>
             </div>
             {/* xxxxxxxxxx ERROR MESSAGE xxxxxxxxxx */}
@@ -630,20 +633,27 @@ BUTTON TO SUBMIT */}
         <div className="modal-content">
             <div className="modal-header">
 
-                      <h5 className="modal-title" id="addAnyRecordHeader">Add Any Record!</h5> 
+                      <h5 className="modal-title  add3dTextShadow" id="addAnyRecordHeader">Add Any Record!</h5> 
                       
-                      <a className="needHelpFinding  " href="https://www.discogs.com/" target="blank">Need Help Finding a Record?</a>
+                      <a className="needHelpFinding  " href="https://www.discogs.com/" target="blank">Search For any Record!</a>
 
               <button type="button" className="close  xCloseBTN" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
 
-            <h3 className="addRecordText text-center">Add New Record</h3>
-            <p className="text-center addingDirections">Simply Fill Out All Fields Below To Have Your Recorded Added To The List</p>
+            {/* This is the main Add New Record                             blackANDwhiteTextShadow */}
+            <h3 className="addRecordText text-center    ">
+              <span className="flickerAnimationLONG">A</span>dd 
+              N<span className="flickerAnimationSHORT">e</span>w 
+              Re<span className="flickerAnimationLONG">c</span>ord
+            </h3>
+
+            {/*This is the directions to add a new record */}
+            {/* <p className="text-center addingDirections  blackANDwhiteTextShadow">Simply Fill Out All Fields Below To Have Your Recorded Added To The List</p> */}
 
           {/* MAIN CONTENT OF MODAL */}
-            <div className="modal-body     text-center      ">
+            <div className="modal-body     text-center     blackANDwhiteTextShadow ">
                 {/* This is an HTML element that will pass the property of addrecord=  to with the function {addrecord} to the Addrecord file */}
                 <Addrecord   addrecord={addrecord}   /> {/* This will call in the Addrecord file and put whatever is being returned Here */}
             </div>
@@ -652,9 +662,9 @@ BUTTON TO SUBMIT */}
 
         {/* CLOSE BUTTON         */}
           <div className="modal-footer    justify-content-center">
-            <button type="button" id="closeModalBTN" className="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" id="closeModalBTN" className="btn" data-dismiss="modal">Close</button>
           </div>
-
+        {/* CLOSE BUTTON         */}
 
         </div>
       </div>
