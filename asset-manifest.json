@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/current-records/static/css/main.4fa0aa0c.css",
+    "main.js": "/current-records/static/js/main.90564776.js",
+    "static/js/787.6653abfd.chunk.js": "/current-records/static/js/787.6653abfd.chunk.js",
+    "static/media/checkered_floor_sliding.gif": "/current-records/static/media/checkered_floor_sliding.dbb7961c75522d39a6ef.gif",
+    "static/media/checkered_floor_sliding_up.gif": "/current-records/static/media/checkered_floor_sliding_up.73d2aae2c0d027eac6db.gif",
+    "static/media/vinyl-black.png": "/current-records/static/media/vinyl-black.a184efdfa66c55143560.png",
+    "static/media/BEE_GEES_bee_gees_1st.jpg": "/current-records/static/media/BEE_GEES_bee_gees_1st.e1a6d116fbcdcaf5adad.jpg",
+    "static/media/FRANK_SINATRA_a_man_and_his_music.jpg": "/current-records/static/media/FRANK_SINATRA_a_man_and_his_music.089abfe7040b5fd0de51.jpg",
+    "static/media/ANDY_WILLIAMS_days_of_wine_and_roses.jpg": "/current-records/static/media/ANDY_WILLIAMS_days_of_wine_and_roses.f3a1342aca7623c0df9e.jpg",
+    "static/media/ANDY_WILLIAMS_to_you_sweetheart,_aloha.jpg": "/current-records/static/media/ANDY_WILLIAMS_to_you_sweetheart,_aloha.83f6156dcce0c2000817.jpg",
+    "static/media/FRANK_SINATRA_sinatra_sinatra_a_collection_of_his_favorites.jpg": "/current-records/static/media/FRANK_SINATRA_sinatra_sinatra_a_collection_of_his_favorites.941d23ecdd9925fc00eb.jpg",
+    "static/media/DEAN_MARTIN_gentle_on_my_mind.jpg": "/current-records/static/media/DEAN_MARTIN_gentle_on_my_mind.44c326950785774423ff.jpg",
+    "static/media/DEAN_MARTIN_italian_love_songs.jpg": "/current-records/static/media/DEAN_MARTIN_italian_love_songs.0f7fb0fe6e71ac9f8f7a.jpg",
+    "static/media/BEE_GEES_mr._natural.jpg": "/current-records/static/media/BEE_GEES_mr._natural.7c7c74c2bc2eb0b48318.jpg",
+    "static/media/BEE_GEES_spirits_having_flown.jpg": "/current-records/static/media/BEE_GEES_spirits_having_flown.2d7096ebde3518c1c7c6.jpg",
+    "static/media/DEAN_MARTIN_you_cant_love_'em_all.jpg": "/current-records/static/media/DEAN_MARTIN_you_cant_love_'em_all.e48ea1400f3fb63f4ea4.jpg",
+    "static/media/FRANK_SINATRA_she_shot_me_down.jpg": "/current-records/static/media/FRANK_SINATRA_she_shot_me_down.15be85f378f88d2820d3.jpg",
+    "static/media/ANDY_WILLIAMS_warm_and_willing.jpg": "/current-records/static/media/ANDY_WILLIAMS_warm_and_willing.4a69a8c167a5a008bc22.jpg",
+    "index.html": "/current-records/index.html",
+    "main.4fa0aa0c.css.map": "/current-records/static/css/main.4fa0aa0c.css.map",
+    "main.90564776.js.map": "/current-records/static/js/main.90564776.js.map",
+    "787.6653abfd.chunk.js.map": "/current-records/static/js/787.6653abfd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4fa0aa0c.css",
+    "static/js/main.90564776.js"
+  ]
+}
