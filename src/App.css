@@ -263,13 +263,14 @@
   -webkit-text-stroke-color: black;
   */
 
-  padding: 10px;
   line-height: 1;
 
   font-size: 7vw;
 
+
+  padding-top: 25px;
   padding-left: 35px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 
   
   color: #eaa2c5; 
@@ -307,7 +308,7 @@ input[type="text"]::-webkit-input-placeholder {
 
 /* This is the text box that says Enter a First or Last Name that has the button attached */
 #enterNameTXT{
-  font-size: 2.15vw;
+  font-size: 2.53vw;
 
 
   /*
@@ -335,7 +336,7 @@ input[type="text"]::-webkit-input-placeholder {
   color: #f06;
 
 
-  font-size: 2.15vw; /* Whatever font size for  #enterNameTXT   is must change it here as well to ensure button is same size */
+  font-size: 2.53vw; /* Whatever font size for  #enterNameTXT   is must change it here as well to ensure button is same size */
 
   /* Adds the little grow animation on a hover */
   transition-property: all; 
@@ -355,7 +356,7 @@ input[type="text"]::-webkit-input-placeholder {
   color: #61dafb;
   transform: scale(1.2);
 
-  font-size: 2.50vw;
+  font-size: 3vw;
 }
 
 @media screen and (min-width: 600px) {
@@ -368,7 +369,7 @@ input[type="text"]::-webkit-input-placeholder {
 
 /* This is the Dropdown for searching for records by album name*/
 #searchByRecordName{
-  font-size: 2.15vw;
+  font-size: 2.50vw;
 
   color: #f06;
 
@@ -400,11 +401,11 @@ select>option{
 
 /* This is the error that will show up in the navbar */
 .errorNAV{
-  font-size: 2.3vw;
+  font-size: 2.1vw;
 
   color: #fff;
 
-text-shadow: -1px -1px 5px #ff0000,
+  text-shadow: -1px -1px 5px #ff0000,
             -0.5px -0.5px 5px #ff0000,
             0.5px 0.5px 5px #ff0000,
             1px 1px 0px #ff0000,
@@ -468,6 +469,8 @@ text-shadow: -1px -1px 5px #ff0000,
 .currentRecordsText{
   text-transform: uppercase;
   font-weight: 400;
+
+  padding-top: 20px;
   margin:  1rem 0;
 
   filter: blur(0.3px);  /* contrast(1.1); */ /* This blurs and gives contrast to the text a little */
@@ -621,7 +624,7 @@ text-shadow: -1px -1px 5px #ff0000,
 
 /* This is the classes for both the top and bottom anchors  */
 .anchor_link_TOP, .anchor_links_BOTTOM{
-  font-size: 2.8vw;
+  font-size: 3.5vw;
 
   
 
@@ -671,19 +674,26 @@ text-shadow: -1px -1px 5px #ff0000,
 
   /* On a hover/focus  the text will ease into the color #037298*/
   transition: color 0.5s ease-out 10ms;
-  
-
-
 }
 
 .anchor_link:hover, .anchor_link:focus{
-  color: #61dafb;
+  color: #000;
   text-decoration: none;
 
-  -webkit-text-stroke: 1px black; /* Adds stroke to the outside of letters on hover  */
-
+  -webkit-text-stroke: 0px black; /* Adds stroke to the outside of letters on hover  */
 
   transform: scale(1.2);
+}
+
+@media screen and (min-width: 600px) {
+  .anchor_link:hover, .anchor_link:focus{
+    color: #61dafb;
+    text-decoration: none;
+  
+    -webkit-text-stroke: 1px black; /* Adds stroke to the outside of letters on hover  */
+  
+    transform: scale(1.2);
+  }
 }
 
 
@@ -714,7 +724,7 @@ text-shadow: -1px -1px 5px #ff0000,
 
 
 
-  font-size: 15px;
+  font-size: 20px;
 
   color: #fff;
   background-color: #61dafb;
@@ -783,7 +793,9 @@ text-shadow: -1px -1px 5px #ff0000,
 .modal{
   backdrop-filter: blur(3px);
 
-  padding-left: 15px; /* CENTERS MODAL ON SCREEN */
+  /* padding: 15px; */ /* CENTERS MODAL ON SCREEN */
+
+
 
   /* THIS WILL CHANGE THE WHOLE BACKGROUND BEHIND MODAL INTO THIS PIC*/
   background-image: url("./pictures/backgrounds/fifties/checkered/checkered_floor_sliding_up.gif");
@@ -791,7 +803,11 @@ text-shadow: -1px -1px 5px #ff0000,
   background-position: center;
   
 }
-
+@media screen and (min-width: 600px) {
+  .modal{
+    padding: 0px; /* CENTERS MODAL ON SCREEN */
+  }
+}
 
 
 
@@ -802,20 +818,22 @@ text-shadow: -1px -1px 5px #ff0000,
     background-image: url("./pictures/backgrounds/fifties/checkered/checkered_floor_sliding_up.gif");
     background-size: cover;
     background-position: center;
+
+    
 }
 
 
 
 /* This is the title inside the modal that says "Add Any Record You Want!" */
-.modal-title{
-  font-size: 4.5vw;
+#addAnyRecordHeader{
+  font-size: 5.5vw;
 
 
   color: #eaa2c5;
 }
 
 @media screen and (min-width: 600px) {
-  .modal-title{
+  #addAnyRecordHeader{
     font-size: 3vw;
   }
 }
@@ -836,7 +854,7 @@ text-shadow: -1px -1px 5px #ff0000,
   5px 5px 0 #000;
 
 
-  font-size: 2vw;
+  font-size: 2.7vw;
 
   padding-left: 35px;
   padding-top: 5px;
@@ -853,8 +871,8 @@ text-shadow: -1px -1px 5px #ff0000,
 
 @media screen and (min-width: 600px) {
   .needHelpFinding{
-    font-size: 1.2vw;
-    padding-left: 100px;
+    font-size: 1.5vw;
+    padding-left: 200px;
   }
 }
 
@@ -870,7 +888,7 @@ text-shadow: -1px -1px 5px #ff0000,
 
   color: #f06;
 
-  font-size: 6vw;
+  font-size: 8vw;
 
     /* Adds the little grow animation on a hover */
     transition-property: all; 
@@ -953,6 +971,10 @@ text-shadow: -1px -1px 5px #ff0000,
   background-color: #f06;
   color: #fff;
 
+  font-size: 6vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
   border-radius: 5px;
   border: solid #000 ;
 
@@ -971,6 +993,13 @@ text-shadow: -1px -1px 5px #ff0000,
   
   border-radius: 0px;
   border: solid #000 ;
+}
+
+@media screen and (min-width: 600px) {
+  #closeModalBTN{
+    font-size: 2vw;
+    margin-top: 20px;
+  }
 }
 /* !!!!!!!!!!! CONTENT INSIDE THE MODEL ONCE CLICKED !!!!!!!!!!*/
 

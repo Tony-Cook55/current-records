@@ -116,9 +116,16 @@ img{
 
 /* Makes images within the cards shrink accordingly */
 .card-img-top {
-  width: 85%;   /* THIS WILL CHANGE THE SIZE OF THE PICTURE */
+
+  /* THIS WILL CHANGE THE SIZE OF THE PICTURE */
+  width: 85%;  
   height: 100%;
+
+
   object-fit: cover;
+
+  padding-left: 0;
+  padding-right: 0;
 
   border-radius: 10px;
 }
@@ -126,8 +133,13 @@ img{
 
 @media screen and (min-width: 600px) {
   .card-img-top {
-    width: 95%;
+    /* makes all images in the cards this */
+    width: 300px;
+    height: 300px;
     /*  height: 20vw;   */
+
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
@@ -332,6 +344,8 @@ img{
   /*IF BUTTONS ARE UP AND DOWN ADD THIS     padding-top: 20px; */
 
   color: black;
+
+  padding-top: 20px;
 
   font-size: 7vw;
   text-transform: uppercase;

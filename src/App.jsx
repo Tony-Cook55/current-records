@@ -54,7 +54,7 @@ function App() {
 
     // IF THERES NO LOCAL STORAGE ADD THIS    DELETE COMMENTS TO RESTORE THE SEED DATA
 
-      saveRecords(records);   // DELETE ME DELETE ME DELETE ME NEEDED TO RESET BACK TO SEED DATA
+               //saveRecords(records);   // DELETE ME DELETE ME DELETE ME NEEDED TO RESET BACK TO SEED DATA
 
     // IF THERES NO LOCAL STORAGE ADD THIS    DELETE COMMENTS TO RESTORE THE SEED DATA
 
@@ -160,7 +160,7 @@ function App() {
       if (searchResults.length === 0) {
         setError("Please Enter a Correct Name");
         console.log("The Name You Entered Is Invalid. Please Enter a Artists Name.");
-        console.log("THIS IS TO SEE IF I CAN PUSH TO LIVE!");
+        console.log("NEW!!!");
       }
       // xxxxxxxxxx ERROR MESSAGE xxxxxxxxxx
 
@@ -206,38 +206,89 @@ function App() {
 
 
 
-  //--- ARRAY WITH record INFORMATION  ---   SEED DATA - PRESET DATA
-  const records = [   // an array with javascript objects
+  //--- ARRAY WITH record INFORMATION  ---   SEED DATA - PRESET DATA 
+  const records = [   // an array with javascript objects // DO THIS CHARACTER INSTEAD (⠀⠀⠀⠀⠀⠀⠀⠀⠀)  // INVISIBLE CHARACTER --> (ㅤ) <-- inside 
 
-    // ~~~~~~~~~~ FRANK SINATRA ~~~~~~~~~~~~~~~ 
+
+
+    // ~~~~~~~~~~ AL MARTINO ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
     {     
       id: nanoid(),    // this gives every new record a unique id per each record 
-      recordsName: "A Man and His Music",
-      image: require("./pictures/frank_sinatra/FRANK_SINATRA_a_man_and_his_music.jpg"),
-      artistsFirstName: "Frank",
-      artistsLastName: "Sinatra",
-      musicGenre: "Jazz"
-    }, 
-    {
-      id: nanoid(),                 // INVISIBLE CHARACTER --> (ㅤ) <-- inside 
-      recordsName: "Sinatra Sinatraㅤ",
-      image: require("./pictures/frank_sinatra/FRANK_SINATRA_sinatra_sinatra_a_collection_of_his_favorites.jpg"),
-      artistsFirstName: "Frank",
-      artistsLastName: "Sinatra",
-      musicGenre: "Jazz"
+      recordsName: "Best of Al Martino",
+      image: require("./pictures/al_martino/AL_MARTINO_best_of_al_martino.jpg"),
+      artistsFirstName: "Al",
+      artistsLastName: "Martino",
+      musicGenre: "60's Pop"
     },
-    {
+    {     
       id: nanoid(),
-      recordsName: "She Shot Me Down",
-      image: require("./pictures/frank_sinatra/FRANK_SINATRA_she_shot_me_down.jpg"),
-      artistsFirstName: "Frank",
-      artistsLastName: "Sinatra",
+      recordsName: "Jean ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/al_martino/AL_MARTINO_jean.jpg"),
+      artistsFirstName: "Al",
+      artistsLastName: "Martino",
+      musicGenre: "70's Pop"
+    }, 
+    {     
+      id: nanoid(),
+      recordsName: "I Love More and More Everyday",
+      image: require("./pictures/al_martino/AL_MARTINO_i_love_more_and_more_every_day.jpg"),
+      artistsFirstName: "Al",
+      artistsLastName: "Martino",
+      musicGenre: "60's Pop"
+    }, 
+    {     
+      id: nanoid(),
+      recordsName: "Living a Lie ⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/al_martino/AL_MARTINO_living_a_lie.jpg"),
+      artistsFirstName: "Al",
+      artistsLastName: "Martino",
       musicGenre: "Jazz"
     }, 
-    // ~~~~~~~~~~ FRANK SINATRA ~~~~~~~~~~~~~~~ 
+    {     
+      id: nanoid(),
+      recordsName: "My Cherie ⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/al_martino/AL_MARTINO_my_cherie.jpg"),
+      artistsFirstName: "Al",
+      artistsLastName: "Martino",
+      musicGenre: "Folk Rock"
+    }, 
+    {     
+      id: nanoid(),
+      recordsName: "Painted, Tainted Rose",
+      image: require("./pictures/al_martino/AL_MARTINO_painted_tainted_rose.jpg"),
+      artistsFirstName: "Al",
+      artistsLastName: "Martino",
+      musicGenre: "60's Pop"
+    }, 
+    {     
+      id: nanoid(),
+      recordsName: "Somebody Else Is Taking My Place",
+      image: require("./pictures/al_martino/AL_MARTINO_somebody_else_is_taking_my_place.jpg"),
+      artistsFirstName: "Al",
+      artistsLastName: "Martino",
+      musicGenre: "60's Pop"
+    }, 
+    {     
+      id: nanoid(),
+      recordsName: "Spanish Eyes ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/al_martino/AL_MARTINO_spanish_eyes.jpg"),
+      artistsFirstName: "Al",
+      artistsLastName: "Martino",
+      musicGenre: "60's Pop"
+    }, 
+    {     
+      id: nanoid(),
+      recordsName: "The Romantic World Of Al Martino",
+      image: require("./pictures/al_martino/AL_MARTINO_the_romantic_world.jpg"),
+      artistsFirstName: "Al",
+      artistsLastName: "Martino",
+      musicGenre: "60's Pop"
+    }, 
+    // ~~~~~~~~~~ AL MARTINO ~~~~~~~~~~~~~~~ 
 
 
-    // ~~~~~~~~~~ ANDY WILLIAMS ~~~~~~~~~~~~~~~ 
+
+    // ~~~~~~~~~~ ANDY WILLIAMS ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
     {
       id: nanoid(),
       recordsName: "Warm and Willing",
@@ -265,7 +316,66 @@ function App() {
     // ~~~~~~~~~~ ANDY WILLIAMS ~~~~~~~~~~~~~~~
 
 
-    // ~~~~~~~~~~ BEE GEES ~~~~~~~~~~~~~~~ 
+
+    // ~~~~~~~~~~ BARRY GIBB ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "Streisand Guilty",
+      image: require("./pictures/barry_Gibb/BARRY_GIBB_guilty.jpg"),
+      artistsFirstName: "Barbra",
+      artistsLastName: "Streisand",
+      musicGenre: "Funk"
+    },
+    // ~~~~~~~~~~ BARRY GIBB ~~~~~~~~~~~~~~~
+
+
+
+    // ~~~~~~~~~~ BARRY MANILOW ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "Barry Manilow I",
+      image: require("./pictures/barry_manilow/BARRY_MANILOW_I.jpg"),
+      artistsFirstName: "Barry",
+      artistsLastName: "Manilow",
+      musicGenre: "Funk"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Barry's Greatest Hits",
+      image: require("./pictures/barry_manilow/BARRY_MANILOW_greatest_hits.jpg"),
+      artistsFirstName: "Barry",
+      artistsLastName: "Manilow",
+      musicGenre: "70's Rock"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Greatest Hits Vol 2",
+      image: require("./pictures/barry_manilow/BARRY_MANILOW_greatest_hits_vol_2.jpg"),
+      artistsFirstName: "Barry",
+      artistsLastName: "Manilow",
+      musicGenre: "80's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Barry Live In Britain",
+      image: require("./pictures/barry_manilow/BARRY_MANILOW_live_in_britain.jpg"),
+      artistsFirstName: "Barry",
+      artistsLastName: "Manilow",
+      musicGenre: "80's Rock"
+    },
+    {
+      id: nanoid(),
+      recordsName: "This One's For You",
+      image: require("./pictures/barry_manilow/BARRY_MANILOW_this_ones_for_you.jpg"),
+      artistsFirstName: "Barry",
+      artistsLastName: "Manilow",
+      musicGenre: "70's Pop"
+    },
+    // ~~~~~~~~~~ BARRY MANILOW ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ BEE GEES ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
     {
       id: nanoid(),
       recordsName: "Spirits Having Flown",
@@ -276,7 +386,7 @@ function App() {
     },
     {
       id: nanoid(),                    // THIS IS AN INVISIBLE CHARACTER (ㅤ)its scummy and bad code but I can't make all pics align
-      recordsName: "The Bee Gees 1stㅤ",
+      recordsName: "The Bee Gees 1st ⠀⠀⠀⠀",
       image: require("./pictures/bee_Gees/BEE_GEES_bee_gees_1st.jpg"),
       artistsFirstName: "Bee",
       artistsLastName: "Gees",
@@ -293,7 +403,71 @@ function App() {
     // ~~~~~~~~~~ BEE GEES ~~~~~~~~~~~~~~~ 
 
 
-    // ~~~~~~~~~~ DEAN MARTIN ~~~~~~~~~~~~~~~ 
+
+    // ~~~~~~~~~~ BEST OF ARTISTS ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "Great Hits of the 60's",
+      image: require("./pictures/Best_of_Artists/BEST_OF_ARTISTS_20_great_stars.jpg"),
+      artistsFirstName: "Best of",
+      artistsLastName: "Artist",
+      musicGenre: "60's Jazz"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Greatest Hits Of The 50s & 60s",
+      image: require("./pictures/Best_of_Artists/BEST_OF_ARTISTS_greatest_hits_of_the_50s_60s.jpg"),
+      artistsFirstName: "Best of",
+      artistsLastName: "Artist",
+      musicGenre: "50's - 60's Rock"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Remember How Great...? ",
+      image: require("./pictures/Best_of_Artists/BEST_OF_ARTISTS_remember_how_great.jpg"),
+      artistsFirstName: "Best of",
+      artistsLastName: "Artist",
+      musicGenre: "Jazz"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Superstars Of The 70's",
+      image: require("./pictures/Best_of_Artists/BEST_OF_ARTISTS_superstars_of_the_70's.jpg"),
+      artistsFirstName: "Best of",
+      artistsLastName: "Artist",
+      musicGenre: "Rock"
+    },
+    // ~~~~~~~~~~ BEST OF ARTISTS ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ BOBBY DARIN ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "Mack the Knife ⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Bobby_Darin/BOBBY_DARIN_mack_the_knife.jpg"),
+      artistsFirstName: "Bobby",
+      artistsLastName: "Darin",
+      musicGenre: "Rock"
+    },
+    // ~~~~~~~~~~ BOBBY DARIN ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ BOZ SCAGGS ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "Silk Degrees ⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Boz_Scaggs/BOZ_SCAGGS_silk_degrees.jpg"),
+      artistsFirstName: "Boz",
+      artistsLastName: "Scaggs",
+      musicGenre: "70's Soul"
+    },
+    // ~~~~~~~~~~ BOZ SCAGGS ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ DEAN MARTIN ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
     {
       id: nanoid(),
       recordsName: "Gentle On my Mind",
@@ -321,8 +495,560 @@ function App() {
 
     },
     // ~~~~~~~~~~ DEAN MARTIN ~~~~~~~~~~~~~~~ 
-  ];
-  //--- ARRAY WITH record INFORMATION  ---
+
+
+
+    // ~~~~~~~~~~ ED AMES ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "My Cup Runneth Over",
+      image: require("./pictures/Ed_Ames/ED_AMES_my_cup_runneth_over.jpg"),
+      artistsFirstName: "Ed",
+      artistsLastName: "Ames",
+      musicGenre: "70's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Try to Remember",
+      image: require("./pictures/Ed_Ames/ED_AMES_try_to_remember.jpg"),
+      artistsFirstName: "Ed",
+      artistsLastName: "Ames",
+      musicGenre: "70's Pop"
+    },
+    // ~~~~~~~~~~ ED AMES ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ ENGLEBERT HUMPERDINCK ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "After the Lovin' ⠀⠀⠀⠀",
+      image: require("./pictures/Englebert_Humperdinck/ENGELBERT_HUMPERDINCK_after_the_lovin'.jpg"),
+      artistsFirstName: "Engelbert",
+      artistsLastName: "Humperdinck",
+      musicGenre: "70's Rock"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Another Time, Another Place",
+      image: require("./pictures/Englebert_Humperdinck/ENGELBERT_HUMPERDINCK_another_time_another_place.jpg"),
+      artistsFirstName: "Engelbert",
+      artistsLastName: "Humperdinck",
+      musicGenre: "70's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Engelbert Humperdinck",
+      image: require("./pictures/Englebert_Humperdinck/ENGELBERT_HUMPERDINCK_engelbert_humperdinck.jpg"),
+      artistsFirstName: "Engelbert",
+      artistsLastName: "Humperdinck",
+      musicGenre: "60's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "His Greatest Hits",
+      image: require("./pictures/Englebert_Humperdinck/ENGELBERT_HUMPERDINCK_greatest_hits.jpg"),
+      artistsFirstName: "Engelbert",
+      artistsLastName: "Humperdinck",
+      musicGenre: "70's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "In Time ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Englebert_Humperdinck/ENGELBERT_HUMPERDINCK_in_time.jpg"),
+      artistsFirstName: "Engelbert",
+      artistsLastName: "Humperdinck",
+      musicGenre: "70's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Release Me ⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Englebert_Humperdinck/ENGELBERT_HUMPERDINCK_release_me.jpg"),
+      artistsFirstName: "Engelbert",
+      artistsLastName: "Humperdinck",
+      musicGenre: "60's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Sweetheart ⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Englebert_Humperdinck/ENGELBERT_HUMPERDINCK_sweetheart.jpg"),
+      artistsFirstName: "Engelbert",
+      artistsLastName: "Humperdinck",
+      musicGenre: "70's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "The Last Waltz ⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Englebert_Humperdinck/ENGELBERT_HUMPERDINCK_the_last_waltz.jpg"),
+      artistsFirstName: "Engelbert",
+      artistsLastName: "Humperdinck",
+      musicGenre: "60's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "We Made It Happen",
+      image: require("./pictures/Englebert_Humperdinck/ENGELBERT_HUMPERDINCK_we_made_it_happen.jpg"),
+      artistsFirstName: "Engelbert",
+      artistsLastName: "Humperdinck",
+      musicGenre: "70's Pop"
+    },
+    // ~~~~~~~~~~ ENGLEBERT HUMPERDINCK ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ FRANK SINATRA ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {     
+      id: nanoid(),    // this gives every new record a unique id per each record 
+      recordsName: "A Man and His Music",
+      image: require("./pictures/frank_sinatra/FRANK_SINATRA_a_man_and_his_music.jpg"),
+      artistsFirstName: "Frank",
+      artistsLastName: "Sinatra",
+      musicGenre: "Jazz"
+    }, 
+    {
+      id: nanoid(),                 // INVISIBLE CHARACTER --> (ㅤ) <-- inside 
+      recordsName: "Sinatra Sinatra ⠀⠀⠀⠀",
+      image: require("./pictures/frank_sinatra/FRANK_SINATRA_sinatra_sinatra_a_collection_of_his_favorites.jpg"),
+      artistsFirstName: "Frank",
+      artistsLastName: "Sinatra",
+      musicGenre: "Jazz"
+    },
+    {
+      id: nanoid(),
+      recordsName: "She Shot Me Down",
+      image: require("./pictures/frank_sinatra/FRANK_SINATRA_she_shot_me_down.jpg"),
+      artistsFirstName: "Frank",
+      artistsLastName: "Sinatra",
+      musicGenre: "Jazz"
+    }, 
+    // ~~~~~~~~~~ FRANK SINATRA ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ HERB ALPERT ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "Whipped Cream ⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Herb_Alpert/HERB_ALPERT_ whipped_cream_&_other_delights.jpg"),
+      artistsFirstName: "Herb",
+      artistsLastName: "Alpert",
+      musicGenre: "Jazz"
+    },
+    // ~~~~~~~~~~ HERB ALPERT ~~~~~~~~~~~~~~~ 
+
+
+
+
+      // ~~~~~~~~~~ INK SPOTS ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+      {
+        id: nanoid(),
+        recordsName: "The Sensational Ink Spots",
+        image: require("./pictures/Ink_Spots/INK_SPOTS_the_sensational_ink_spots.jpg"),
+        artistsFirstName: "Ink",
+        artistsLastName: "Spots",
+        musicGenre: "60's Jazz"
+      },
+      // ~~~~~~~~~~ INK SPOTS ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ JACK JONES ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "A Time For Us ⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Jack_Jones/JACK_JONES_a_time_for_us.jpg"),
+      artistsFirstName: "Jack",
+      artistsLastName: "Jones",
+      musicGenre: "70's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Jack Jones' Greatest Hits",
+      image: require("./pictures/Jack_Jones/JACK_JONES_greatest_hits.jpg"),
+      artistsFirstName: "Jack",
+      artistsLastName: "Jones",
+      musicGenre: "60's Jazz"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Jack Jones Sings",
+      image: require("./pictures/Jack_Jones/JACK_JONES_jack_jones_sings.jpg"),
+      artistsFirstName: "Jack",
+      artistsLastName: "Jones",
+      musicGenre: "60's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "The Impossible Dream",
+      image: require("./pictures/Jack_Jones/JACK_JONES_the_impossible_dream.jpg"),
+      artistsFirstName: "Jack",
+      artistsLastName: "Jones",
+      musicGenre: "60's Pop"
+    },
+    // ~~~~~~~~~~ JACK JONES ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ JOHNNY MATHIS ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "Feelings ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Johnny_Mathis/JOHNNY_MATHIS_feelings.jpg"),
+      artistsFirstName: "Johnny",
+      artistsLastName: "Mathis",
+      musicGenre: "70's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Johnny's Greatest Hits",
+      image: require("./pictures/Johnny_Mathis/JOHNNY_MATHIS_greatest_hits.jpg"),
+      artistsFirstName: "Johnny",
+      artistsLastName: "Mathis",
+      musicGenre: "50's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Heavenly ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Johnny_Mathis/JOHNNY_MATHIS_heavenly.jpg"),
+      artistsFirstName: "Johnny",
+      artistsLastName: "Mathis",
+      musicGenre: "50's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Love Is Blue ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Johnny_Mathis/JOHNNY_MATHIS_love_is_blue.jpg"),
+      artistsFirstName: "Johnny",
+      artistsLastName: "Mathis",
+      musicGenre: "60's Jazz"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Portrait Of Johnny",
+      image: require("./pictures/Johnny_Mathis/JOHNNY_MATHIS_portrait_of_johnny.jpg"),
+      artistsFirstName: "Johnny",
+      artistsLastName: "Mathis",
+      musicGenre: "60's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "The First Time Ever",
+      image: require("./pictures/Johnny_Mathis/JOHNNY_MATHIS_the_first_time_ever.jpg"),
+      artistsFirstName: "Johnny",
+      artistsLastName: "Mathis",
+      musicGenre: "70's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "The Sweetheart Tree",
+      image: require("./pictures/Johnny_Mathis/JOHNNY_MATHIS_the_sweetheart_tree.jpg"),
+      artistsFirstName: "Johnny",
+      artistsLastName: "Mathis",
+      musicGenre: "60's Jazz"
+    },
+    {
+      id: nanoid(),
+      recordsName: "The World Of Make Believe",
+      image: require("./pictures/Johnny_Mathis/JOHNNY_MATHIS_the_wonderful_world_of_make_believe.jpg"),
+      artistsFirstName: "Johnny",
+      artistsLastName: "Mathis",
+      musicGenre: "60's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Those Were The Days",
+      image: require("./pictures/Johnny_Mathis/JOHNNY_MATHIS_those_were_the_days.jpg"),
+      artistsFirstName: "Johnny",
+      artistsLastName: "Mathis",
+      musicGenre: "60's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Up,Up And Away ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Johnny_Mathis/JOHNNY_MATHIS_up,_up_and_away.jpg"),
+      artistsFirstName: "Johnny",
+      artistsLastName: "Mathis",
+      musicGenre: "60's Pop"
+    },
+    // ~~~~~~~~~~ JOHNNY MATHIS ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ LOUIS ARMSTRONG ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "Louis Armstrong",
+      image: require("./pictures/Louis_Armstrong/LOUIS_ARMSTRONG_louis_armstrong.jpg"),
+      artistsFirstName: "Louis",
+      artistsLastName: "Armstrong",
+      musicGenre: "60's Jazz"
+    },
+    // ~~~~~~~~~~ LOUIS ARMSTRONG ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ MATT MONRO ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "This Is The Life! ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Matt_Monro/MATT_MONRO_this_is_the_life.jpg"),
+      artistsFirstName: "Matt",
+      artistsLastName: "Monro",
+      musicGenre: "60's Pop"
+    },
+    // ~~~~~~~~~~ MATT MONRO ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ NEIL DIAMOND ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "Headed For The Future",
+      image: require("./pictures/Neil_Diamond/NEIL_DIAMOND_headed_for_the_future.jpg"),
+      artistsFirstName: "Neil",
+      artistsLastName: "Diamond",
+      musicGenre: "80's Rock"
+    },
+    {
+      id: nanoid(),
+      recordsName: "September Morn",
+      image: require("./pictures/Neil_Diamond/NEIL_DIAMOND_september_morn.jpg"),
+      artistsFirstName: "Neil",
+      artistsLastName: "Diamond",
+      musicGenre: "70's Soft Rock"
+    },
+    {
+      id: nanoid(),
+      recordsName: "The Jazz Singer ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Neil_Diamond/NEIL_DIAMOND_the_jazz_singer.jpg"),
+      artistsFirstName: "Neil",
+      artistsLastName: "Diamond",
+      musicGenre: "80's Rock"
+    },
+    // ~~~~~~~~~~ NEIL DIAMOND ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ NEIL SEDAKA ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "Neil Sings His Greatest Hits",
+      image: require("./pictures/Neil_Sedaka/NEIL_SEDAKA_ sings_his_greatest_hits.jpg"),
+      artistsFirstName: "Neil",
+      artistsLastName: "Sedaka",
+      musicGenre: "70's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Sedaka Live In Australia",
+      image: require("./pictures/Neil_Sedaka/NEIL_SEDAKA_sedaka_live_in_australia.jpg"),
+      artistsFirstName: "Neil",
+      artistsLastName: "Sedaka",
+      musicGenre: "70's Rock"
+    },
+    // ~~~~~~~~~~ NEIL SEDAKA ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ ORLEANS ~~~~~~~~~~~~~~~ (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "Let There Be Music",
+      image: require("./pictures/Orleans/ORLEANS_let_there_be_music.jpg"),
+      artistsFirstName: "Orleans",
+      artistsLastName: "",
+      musicGenre: "70's Rock"
+    },
+    // ~~~~~~~~~~ ORLEANS ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ PAUL ANKA ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "Anka ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Paul_Anka/PAUL_ANKA_anka.jpg"),
+      artistsFirstName: "Paul",
+      artistsLastName: "Anka",
+      musicGenre: "70's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Feelings ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Paul_Anka/PAUL_ANKA_feelings.jpg"),
+      artistsFirstName: "Paul",
+      artistsLastName: "Anka",
+      musicGenre: "70's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Times Of Your Life",
+      image: require("./pictures/Paul_Anka/PAUL_ANKA_times_of_your_life.jpg"),
+      artistsFirstName: "Paul",
+      artistsLastName: "Anka",
+      musicGenre: "70's Pop"
+    },
+    // ~~~~~~~~~~ PAUL ANKA ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ PERRY COMO ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "By Request ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Perry_Como/PERRY_COMO_by_request.jpg"),
+      artistsFirstName: "Perry",
+      artistsLastName: "Como",
+      musicGenre: "60's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Dream Along With Me",
+      image: require("./pictures/Perry_Como/PERRY_COMO_dream_along_with_me.jpg"),
+      artistsFirstName: "Perry",
+      artistsLastName: "Como",
+      musicGenre: "50's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "It's Impossible ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Perry_Como/PERRY_COMO_it's_impossible.jpg"),
+      artistsFirstName: "Perry",
+      artistsLastName: "Como",
+      musicGenre: "70's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Just For You ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Perry_Como/PERRY_COMO_just_for_you.jpg"),
+      artistsFirstName: "Perry",
+      artistsLastName: "Como",
+      musicGenre: "70's Jazz"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Just Out Of Reach",
+      image: require("./pictures/Perry_Como/PERRY_COMO_just_out_of_reach.jpg"),
+      artistsFirstName: "Perry",
+      artistsLastName: "Como",
+      musicGenre: "70's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "We Get Letters ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Perry_Como/PERRY_COMO_we_get_letters.jpg"),
+      artistsFirstName: "Perry",
+      artistsLastName: "Como",
+      musicGenre: "50's Jazz"
+    },
+    {
+      id: nanoid(),
+      recordsName: "The End Of The Day",
+      image: require("./pictures/Perry_Como/PERRY_COMO_when_you_come_to_the_end_of_the_day.jpg"),
+      artistsFirstName: "Perry",
+      artistsLastName: "Como",
+      musicGenre: "50's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Where You're Concerned",
+      image: require("./pictures/Perry_Como/PERRY_COMO_where_you're_concerned.jpg"),
+      artistsFirstName: "Perry",
+      artistsLastName: "Como",
+      musicGenre: "70's Jazz"
+    },
+    // ~~~~~~~~~~ PERRY COMO ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ ROBERTA FLACK ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "Killing Me Softly",
+      image: require("./pictures/Roberta_Flack/ROBERTA_FLACK_killing_me_softly.jpg"),
+      artistsFirstName: "Roberta",
+      artistsLastName: "Flack",
+      musicGenre: "70's Funk"
+    },
+    // ~~~~~~~~~~ ROBERTA FLACK ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ SAMMY DAVIS JR. ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "The Great Sammy Davis",
+      image: require("./pictures/Sammy_Davis_Jr/SAMMY_DAVIS_JR_the_great_sammy_davis_jr.jpg"),
+      artistsFirstName: "Sammy",
+      artistsLastName: "Davis Jr.",
+      musicGenre: "60's Pop"
+    },
+    // ~~~~~~~~~~ SAMMY DAVIS JR. ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ TEDDY PENDERGRASS ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: " Life Is A Song Worth Singing",
+      image: require("./pictures/Teddy_Pendergrass/TEDDY_PENDERGRASS_life_is_a_song_worth_singing.jpg"),
+      artistsFirstName: "Teddy",
+      artistsLastName: "Pendergrass",
+      musicGenre: "70's Soul"
+    },
+    // ~~~~~~~~~~ TEDDY PENDERGRASS ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ TOM JONES ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: " Live In Las Vegas ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Tom_Jones/TOM_JONES_live_in_las_vegas.jpg"),
+      artistsFirstName: "Tom",
+      artistsLastName: "Jones",
+      musicGenre: "60's Rock"
+    },
+    // ~~~~~~~~~~ TOM JONES ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ VIC DAMONE ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "Angela Mia ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+      image: require("./pictures/Vic_Damone/VIC_DAMONE_angela_mia.jpg"),
+      artistsFirstName: "Vic",
+      artistsLastName: "Damone",
+      musicGenre: "50's Pop"
+    },
+    {
+      id: nanoid(),
+      recordsName: "Basin Street East",
+      image: require("./pictures/Vic_Damone/VIC_DAMONE_the_liveliest_at_basin_street_east.jpg"),
+      artistsFirstName: "Vic",
+      artistsLastName: "Damone",
+      musicGenre: "60's Jazz"
+    },
+    // ~~~~~~~~~~ VIC DAMONE ~~~~~~~~~~~~~~~ 
+
+
+
+    // ~~~~~~~~~~ WAYNE NEWTON ~~~~~~~~~~~~~~~  (⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀)
+    {
+      id: nanoid(),
+      recordsName: "Wayne Newton Sings Hit Songs",
+      image: require("./pictures/Wayne_Newton/WAYNE_NEWTON_sings_hit_songs.jpg"),
+      artistsFirstName: "Wayne",
+      artistsLastName: "Newton",
+      musicGenre: "60's Jazz"
+    },
+    // ~~~~~~~~~~ WAYNE NEWTON ~~~~~~~~~~~~~~~  
+
+
+
+
+  ];//--- ARRAY WITH record INFORMATION  ---
 
 
 
@@ -635,7 +1361,7 @@ BUTTON TO SUBMIT */}
 
                       <h5 className="modal-title  add3dTextShadow" id="addAnyRecordHeader">Add Any Record!</h5> 
                       
-                      <a className="needHelpFinding  " href="https://www.discogs.com/" target="blank">Search For any Record!</a>
+                      <a className="needHelpFinding  " href="https://www.discogs.com/" target="blank">Search Records!</a>
 
               <button type="button" className="close  xCloseBTN" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>

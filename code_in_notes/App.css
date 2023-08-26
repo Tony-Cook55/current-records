@@ -807,7 +807,7 @@ text-shadow: -1px -1px 5px #ff0000,
 
 
 /* This is the title inside the modal that says "Add Any Record You Want!" */
-.modal-title{
+#addAnyRecordHeader{
   font-size: 4.5vw;
 
 
@@ -815,7 +815,7 @@ text-shadow: -1px -1px 5px #ff0000,
 }
 
 @media screen and (min-width: 600px) {
-  .modal-title{
+  #addAnyRecordHeader{
     font-size: 3vw;
   }
 }

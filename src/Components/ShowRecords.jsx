@@ -101,13 +101,13 @@ function Showrecord(props){
         }
         {editMode &&     // WHILE IN EDIT MODE ALLOW NEW USER INPUTS   !!!! EDIT MODE BELOW !!!!
 
-        <ul className='list-group list-group-flush    editMode'>
+        <ul className='list-group list-group-flush  opacityBackground  editMode'>
 
           <h3 className="editRecordText">Edit Record</h3>
 
           {/* recordNameSearch INPUT FOR EDIT MODE  */}
           <li className='list-group-item   text-center'>                                                                                           {/*  maxlength="16"   ==   This is to ensure none of the cards look different  */}
-            <input type="text" value={recordsName} onChange={(evt) => setrecordsName(evt.currentTarget.value)} className="form-control"            />
+            <input type="text" value={recordsName} onChange={(evt) => setrecordsName(evt.currentTarget.value)} className="form-control"   placeholder="Edit Records Name"         />
           </li> 
           {/* recordNameSearch INPUT FOR EDIT MODE  */}
 
@@ -117,21 +117,21 @@ function Showrecord(props){
 
           {/* FIRST NAME INPUT FOR EDIT MODE  */}
           <li className='list-group-item   text-center'>    {/* value={artistsFirstName} calls in the first from  from useEffect due to it loading the data on load */}   {/*  maxLength="16"   ==   This is to ensure none of the cards look different  */}
-            <input type="text" value={artistsFirstName} onChange={(evt) => setartistsFirstName(evt.currentTarget.value)} className="form-control"                          />
+            <input type="text" value={artistsFirstName} onChange={(evt) => setartistsFirstName(evt.currentTarget.value)} className="form-control " placeholder="Edit Artists First Name"                          />
           </li> 
           {/* FIRST NAME INPUT FOR EDIT MODE  */}
 
 
           {/* LAST NAME INPUT FOR EDIT MODE  */}
           <li className='list-group-item   text-center'>                                                                                           {/*  maxLength="16"   ==   This is to ensure none of the cards look different  */}
-            <input type="text" value={artistsLastName} onChange={(evt) => setartistsLastName(evt.currentTarget.value)} className="form-control"    />
+            <input type="text" value={artistsLastName} onChange={(evt) => setartistsLastName(evt.currentTarget.value)} className="form-control"    placeholder="Edit Artists Last Name"/>
           </li> 
           {/* LAST NAME INPUT FOR EDIT MODE  */}
 
 
           {/* musicGenre INPUT FOR EDIT MODE  */}
           <li className='list-group-item   text-center'>                                                                                           {/*  maxLength="4"  This is to ensure none of the cards look different */}
-            <input type="text" value={musicGenre} onChange={(evt) => setmusicGenre(evt.currentTarget.value)} className="form-control"            />
+            <input type="text" value={musicGenre} onChange={(evt) => setmusicGenre(evt.currentTarget.value)} className="form-control"      placeholder="Edit Records Genre"      />
           </li> 
           {/* musicGenre INPUT FOR EDIT MODE  */}
 
@@ -141,12 +141,14 @@ function Showrecord(props){
 
           {/* SAVE BUTTON */}
           {/* This will show a button that Once you are in edit mode that will save the results you inputted */}
-          <li className='list-group-item' >
-            <button id="btnSave" type="button" className="btn btn-secondary" 
-              onClick={saveRecords}>  {/* onClick will fire the saveRecords function that will set all the values to the newly inputted values*/}
-                Save
-            </button>
-          </li> 
+          <span className="buttonsContainer opacityBackground">
+            <li className='list-group-item' >
+              <button id="btnSave" type="button" className="btn btn-secondary" 
+                onClick={saveRecords}>  {/* onClick will fire the saveRecords function that will set all the values to the newly inputted values*/}
+                  Save
+              </button>
+            </li>
+          </span> 
           {/* SAVE BUTTON */}
 
         </ul>
